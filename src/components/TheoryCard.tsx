@@ -26,8 +26,220 @@ export default function TheoryCard({ theory, isExpanded, onRead, isRead }: Theor
     }
   }
 
+  const renderVanVugtContent = (content: any) => {
+    return (
+      <div className="space-y-6">
+        {/* Introduction */}
+        {content.introduction && (
+          <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+            <h4 className="font-semibold text-blue-800 mb-2">{content.introduction.title}</h4>
+            <p className="text-blue-700 mb-2">{content.introduction.description}</p>
+            {content.introduction.contextualNote && (
+              <p className="text-blue-600 italic text-sm">{content.introduction.contextualNote}</p>
+            )}
+          </div>
+        )}
+
+        {/* Five Comparisons */}
+        {content.fiveComparisons && (
+          <div className="space-y-4">
+            <h4 className="font-semibold text-gray-800 text-lg">🔍 Vijf Vergelijkingsdimensies</h4>
+            {content.fiveComparisons.map((comparison: any, index: number) => (
+              <div key={index} className="bg-white border rounded-lg p-4">
+                <h5 className="font-semibold text-purple-700 mb-3">{comparison.dimension}</h5>
+                
+                <div className="grid md:grid-cols-2 gap-4 mb-3">
+                  <div className="bg-green-50 p-3 rounded border-l-4 border-green-400">
+                    <h6 className="font-medium text-green-800 mb-1">👑 Gezag</h6>
+                    <p className="text-green-700 text-sm">{comparison.authority}</p>
+                  </div>
+                  <div className="bg-red-50 p-3 rounded border-l-4 border-red-400">
+                    <h6 className="font-medium text-red-800 mb-1">⚡ Dominantie</h6>
+                    <p className="text-red-700 text-sm">{comparison.dominance}</p>
+                  </div>
+                </div>
+
+                {comparison.nuance && (
+                  <div className="bg-yellow-50 p-3 rounded border-l-4 border-yellow-400">
+                    <h6 className="font-medium text-yellow-800 mb-1">⚖️ Nuance</h6>
+                    <p className="text-yellow-700 text-sm">{comparison.nuance}</p>
+                  </div>
+                )}
+
+                {comparison.explanation && (
+                  <div className="bg-gray-50 p-3 rounded mt-3">
+                    <p className="text-gray-700 text-sm">{comparison.explanation}</p>
+                  </div>
+                )}
+
+                {comparison.examples && (
+                  <div className="mt-3 space-y-2">
+                    <h6 className="font-medium text-gray-800">Voorbeelden:</h6>
+                    {Object.entries(comparison.examples).map(([key, value]: [string, any]) => (
+                      <div key={key} className="bg-blue-50 p-2 rounded text-sm">
+                        <span className="font-medium text-blue-800 capitalize">{key}:</span>
+                        <span className="text-blue-700 ml-1">{value}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Real World Examples */}
+        {content.realWorldExamples && (
+          <div className="space-y-4">
+            <h4 className="font-semibold text-gray-800 text-lg">🌍 {content.realWorldExamples.title}</h4>
+            
+            <div className="grid md:grid-cols-2 gap-4">
+              {/* Mandela */}
+              {content.realWorldExamples.mandela && (
+                <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                  <h5 className="font-semibold text-green-800 mb-2">{content.realWorldExamples.mandela.name}</h5>
+                  <p className="text-green-700 text-sm mb-3">{content.realWorldExamples.mandela.description}</p>
+                  <ul className="text-green-600 text-sm space-y-1">
+                    {content.realWorldExamples.mandela.characteristics.map((char: string, index: number) => (
+                      <li key={index}>• {char}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Bokito */}
+              {content.realWorldExamples.bokito && (
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                  <h5 className="font-semibold text-red-800 mb-2">{content.realWorldExamples.bokito.name}</h5>
+                  <p className="text-red-700 text-sm mb-3">{content.realWorldExamples.bokito.description}</p>
+                  <ul className="text-red-600 text-sm space-y-1">
+                    {content.realWorldExamples.bokito.characteristics.map((char: string, index: number) => (
+                      <li key={index}>• {char}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            {/* Biden */}
+            {content.realWorldExamples.biden && (
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <h5 className="font-semibold text-blue-800 mb-2">{content.realWorldExamples.biden.name}</h5>
+                <p className="text-blue-700 text-sm mb-3">{content.realWorldExamples.biden.description}</p>
+                
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div>
+                    <h6 className="font-medium text-blue-800 mb-1">Gezag Aspecten:</h6>
+                    <ul className="text-blue-600 text-sm space-y-1">
+                      {content.realWorldExamples.biden.authorityAspects.map((aspect: string, index: number) => (
+                        <li key={index}>• {aspect}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 className="font-medium text-blue-800 mb-1">Complexiteiten:</h6>
+                    <ul className="text-blue-600 text-sm space-y-1">
+                      {content.realWorldExamples.biden.complexities.map((complexity: string, index: number) => (
+                        <li key={index}>• {complexity}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Trump */}
+            {content.realWorldExamples.trump && (
+              <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                <h5 className="font-semibold text-orange-800 mb-2">{content.realWorldExamples.trump.name}</h5>
+                <p className="text-orange-700 text-sm mb-3">{content.realWorldExamples.trump.description}</p>
+                
+                <div className="grid md:grid-cols-2 gap-3 mb-3">
+                  <div>
+                    <h6 className="font-medium text-red-800 mb-1">Dominantie Aspecten:</h6>
+                    <ul className="text-red-600 text-sm space-y-1">
+                      {content.realWorldExamples.trump.dominanceAspects.map((aspect: string, index: number) => (
+                        <li key={index}>• {aspect}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 className="font-medium text-green-800 mb-1">Gezag Aspecten:</h6>
+                    <ul className="text-green-600 text-sm space-y-1">
+                      {content.realWorldExamples.trump.authorityAspects.map((aspect: string, index: number) => (
+                        <li key={index}>• {aspect}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="bg-yellow-50 p-3 rounded border-l-4 border-yellow-400">
+                  <p className="text-yellow-700 text-sm">
+                    <strong>Nuance:</strong> {content.realWorldExamples.trump.nuance}
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Cultural Context */}
+        {content.culturalContext && (
+          <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+            <h4 className="font-semibold text-purple-800 mb-2">🌐 {content.culturalContext.title}</h4>
+            <p className="text-purple-700 mb-2">{content.culturalContext.description}</p>
+            <p className="text-purple-600 text-sm mb-2">
+              <strong>Voorbeeld:</strong> {content.culturalContext.example}
+            </p>
+            <p className="text-purple-600 text-sm">
+              <strong>Nederlandse Context:</strong> {content.culturalContext.dutchContext}
+            </p>
+          </div>
+        )}
+
+        {/* Practical Application */}
+        {content.practicalApplication && (
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <h4 className="font-semibold text-gray-800 mb-2">🎯 {content.practicalApplication.title}</h4>
+            <p className="text-gray-700 mb-3">{content.practicalApplication.analysis}</p>
+            <ol className="text-gray-600 text-sm space-y-1">
+              {content.practicalApplication.steps.map((step: string, index: number) => (
+                <li key={index}>{index + 1}. {step}</li>
+              ))}
+            </ol>
+          </div>
+        )}
+
+        {/* Key Insights */}
+        {content.keyInsights && (
+          <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+            <h4 className="font-semibold text-yellow-800 mb-2">💡 Belangrijkste Inzichten</h4>
+            <ul className="text-yellow-700 space-y-1">
+              {content.keyInsights.map((insight: string, index: number) => (
+                <li key={index}>• {insight}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Sport Application */}
+        {content.sportApplication && (
+          <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+            <h4 className="font-semibold text-green-800 mb-2">🏆 Toepassing in Sport</h4>
+            <p className="text-green-700">{content.sportApplication}</p>
+          </div>
+        )}
+      </div>
+    )
+  }
+
   const renderContent = () => {
     const content = theory.content
+
+    // Special handling for Van Vugt & Wiltschut theory
+    if (theory.id === 'van-vugt-wiltschut') {
+      return renderVanVugtContent(content)
+    }
 
     // Handle different content structures based on theory type
     switch (theory.id) {

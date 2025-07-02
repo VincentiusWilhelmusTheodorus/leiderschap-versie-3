@@ -452,6 +452,30 @@ const theories: Theory[] = [
           sportExample: "Een sportdirecteur die constant nieuwe initiatieven start, trainingsmethoden verandert en spelers haalt zonder duidelijke strategie, waardoor niemand weet waar ze aan toe zijn."
         }
       ],
+      underlyingCauses: [
+        "Onverwerkte trauma's uit het verleden",
+        "Diepgewortelde onzekerheden en angsten", 
+        "Gebrek aan zelfbewustzijn en reflectie",
+        "Stress en druk van buitenaf",
+        "Slechte rolmodellen in het verleden"
+      ],
+      solutions: [
+        {
+          name: "Zelfbewustzijn Ontwikkelen",
+          description: "Herken je eigen patronen en triggers",
+          methods: ["360-graden feedback", "Coaching", "Zelfreflectie", "Mindfulness"]
+        },
+        {
+          name: "Professionele Hulp",
+          description: "Werk met coaches of therapeuten aan onderliggende issues",
+          methods: ["Executive coaching", "Therapie", "Mentoring", "Peer support groepen"]
+        },
+        {
+          name: "Systemen Creëren",
+          description: "Bouw structuren die disfunctioneel gedrag voorkomen",
+          methods: ["Regelmatige feedback momenten", "Duidelijke procedures", "Checks and balances", "Team evaluaties"]
+        }
+      ],
       prevention: "De beste preventie is regelmatige zelfreflectie, het vragen van eerlijke feedback, en het creëren van een cultuur waarin mensen veilig de waarheid kunnen spreken."
     }
   },
@@ -552,301 +576,100 @@ const theories: Theory[] = [
           ]
         }
       ],
-      sportApplication: "In sport zie je dit duidelijk: de beste coaches en aanvoerders hebben visie, charisma, zelfvertrouwen en durven risico's te nemen. Maar zodra het alleen nog om hun eigen ego gaat in plaats van het team, worden ze ineffectief."
-    }
-  },
-  {
-    id: 'narcissistic-leadership',
-    title: "Kenmerken van Narcistisch Leiderschap",
-    description: "Herkenbare patronen van narcistische leiders die teams en organisaties kunnen beschadigen.",
-    content: {
-      introduction: "Narcistische leiders vertonen specifieke gedragspatronen die hun effectiviteit ondermijnen en schade toebrengen aan hun teams en organisaties.",
-      characteristics: [
-        {
-          name: "Slechte Verliezers en Slechte Winnaars",
-          description: "Kunnen niet goed omgaan met nederlagen en zijn nooit tevreden met overwinningen",
-          traits: [
-            "Bij verlies ligt het altijd aan anderen",
-            "Bij winst is het nooit goed genoeg",
-            "Alles kan altijd beter volgens hen",
-            "Nemen geen verantwoordelijkheid voor fouten"
-          ],
-          sportExample: "Een coach die na een nederlaag altijd de scheidsrechter, spelers of omstandigheden de schuld geeft, maar na een overwinning zegt dat het team beter had kunnen spelen."
+      productiveVsDestructive: {
+        title: "Productief vs Destructief Narcisme",
+        productive: {
+          description: "Wanneer deze vier elementen ten goede komen aan het team en de organisatie",
+          characteristics: [
+            "Visie wordt gedeeld en anderen worden erbij betrokken",
+            "Charisma wordt gebruikt om het team te inspireren",
+            "Zelfvertrouwen geeft anderen ook vertrouwen",
+            "Risico's worden genomen voor het algemeen belang"
+          ]
         },
-        {
-          name: "Voortdurend Ondergewaardeerd",
-          description: "Voelen zich constant niet gewaardeerd en zoeken voortdurend naar erkenning",
-          traits: [
-            "Hebben constant behoefte aan waardering",
-            "Voelen zich altijd tekort gedaan",
-            "Zoeken voortdurend bevestiging van hun waarde",
-            "Kunnen niet genieten van complimenten"
-          ],
-          sportExample: "Een trainer die na elke wedstrijd benadrukt hoe goed zijn tactiek was en hoe weinig erkenning hij krijgt van de media en bestuur."
-        },
-        {
-          name: "Superioriteitscomplex",
-          description: "Geloven dat ze superieur zijn aan iedereen om hen heen",
-          traits: [
-            "Iedereen is dom behalve zij",
-            "Hun kijk op dingen is altijd beter",
-            "Anderen zien het allemaal verkeerd",
-            "Hebben altijd gelijk"
-          ],
-          sportExample: "Een sportdirecteur die denkt dat alleen hij verstand heeft van voetbal en alle anderen (trainers, scouts, analisten) het verkeerd zien."
-        },
-        {
-          name: "Dominantie en Controle",
-          description: "Willen anderen voortdurend vertellen wat ze moeten doen",
-          traits: [
-            "Geven constant instructies aan anderen",
-            "Kunnen niet delegeren",
-            "Willen alles controleren",
-            "Accepteren geen tegenspraak"
-          ],
-          sportExample: "Een coach die tijdens de wedstrijd elke pass en beweging wil dirigeren en spelers geen eigen initiatief laat nemen."
-        },
-        {
-          name: "Entertainment en Show",
-          description: "Maken van alles een theatrale voorstelling",
-          traits: [
-            "Hoog entertainment gehalte in speeches",
-            "Alles wordt een show",
-            "Dramatische gebaren en uitspraken",
-            "Zoeken voortdurend de spotlights"
-          ],
-          sportExample: "Een trainer die persconferenties gebruikt als podium voor dramatische uitspraken en theatrale gebaren, zoals Hitler's speeches maar dan in sport."
-        },
-        {
-          name: "Emotieloosheid",
-          description: "Hebben geen empathie en willen emoties niet voelen of tonen",
-          traits: [
-            "Geen empathie voor anderen",
-            "Stoppen emoties weg",
-            "Willen emotieloos overkomen",
-            "Kunnen niet omgaan met gevoelens van anderen"
-          ],
-          sportExample: "Een coach die geen begrip toont voor een speler die emotioneel is na een blessure of persoonlijk verlies."
-        },
-        {
-          name: "Niet Luisteren",
-          description: "Willen alleen zelf aan het woord zijn en luisteren niet naar anderen",
-          traits: [
-            "Onderbreken anderen constant",
-            "Horen alleen wat ze willen horen",
-            "Negeren feedback en adviezen",
-            "Monologen in plaats van dialogen"
-          ],
-          sportExample: "Een trainer die tijdens teamvergaderingen alleen zelf praat en spelers geen kans geeft om input te geven."
-        },
-        {
-          name: "Relationele Problemen",
-          description: "Hebben problematische relaties en zijn vaak bedriegers",
-          traits: [
-            "Veel scheidingen en gebroken relaties",
-            "Bedriegen partners regelmatig",
-            "Hebben vaak veel jongere partners",
-            "Gebruiken relaties voor eigen imago"
-          ],
-          sportExample: "Zoals Berlusconi - veel gescheiden, veel jongere vrouwen, relaties die vooral hun ego dienen in plaats van echte verbindingen."
+        destructive: {
+          description: "Wanneer deze elementen alleen het ego van de leider dienen",
+          characteristics: [
+            "Visie wordt opgedrongen zonder input van anderen",
+            "Charisma wordt gebruikt voor persoonlijk gewin",
+            "Zelfvertrouwen wordt arrogantie die anderen kleinhoudt",
+            "Risico's worden genomen zonder rekening te houden met gevolgen voor anderen"
+          ]
         }
-      ],
-      mandelaParadox: {
-        title: "Het Mandela Paradox",
-        description: "Hoe kan een niet-narcistische leider zoals Nelson Mandela narcistische opvolgers hebben?",
-        questions: [
-          "Had Mandela narcistische trekken als leider van 'Spear of the Nation' met gewelddadige acties?",
-          "Waarom had zijn vrouw Winnie Mandela zoveel kenmerken van narcistisch leiderschap?",
-          "Hoe kunnen zijn opvolgers (vooral Zuma) zo narcistisch zijn?",
-          "In hoeverre is Mandela verantwoordelijk voor de latere problemen in Zuid-Afrika?"
-        ],
-        analysis: "Deze vragen tonen aan dat zelfs grote leiders complexe kanten hebben en dat leiderschap in verschillende contexten verschillende vormen kan aannemen."
       },
-      application: "Gebruik deze kenmerken om narcistische patronen bij leiders te herkennen. Hoe meer kenmerken aanwezig zijn, hoe problematischer het leiderschap wordt voor het team en de organisatie."
+      keyMessage: {
+        title: "De Balans is Cruciaal",
+        description: "Deze vier narcistische elementen zijn essentieel voor effectief leiderschap, maar alleen als ze in balans blijven en ten goede komen aan het team.",
+        warning: "Zodra ze doorslaan naar puur eigenbelang, wordt productief narcisme destructief narcisme."
+      },
+      sportApplication: "In sport zie je dit duidelijk: de beste coaches en aanvoerders hebben visie, charisma, zelfvertrouwen en durven risico's te nemen. Maar zodra het alleen nog om hun eigen ego gaat in plaats van het team, worden ze ineffectief."
     }
   },
   {
     id: 'ferguson',
     title: "Alex Ferguson's Leiderschapsfilosofie",
-    description: "Sir Alex Ferguson leidde Manchester United 26 jaar lang naar ongekend succes. Zijn 9 leiderschapselementen zijn toepasbaar in elke organisatie.",
+    description: "Sir Alex Ferguson leidde Manchester United 26 jaar lang naar ongekend succes. Zijn 9 leiderschapsprincipes zijn toepasbaar in elke organisatie.",
     content: {
       introduction: "Sir Alex Ferguson (1941) is een van de meest succesvolle coaches aller tijden. In 26 jaar bij Manchester United won hij 38 trofeeën, waaronder 13 Premier League titels en 2 Champions League cups.",
       nineElements: [
         {
-          name: "1. Macht, Controle en Delegatie",
-          description: "Macht is iets dat je krijgt van mensen - ze geven je vertrouwen zodat je controle over hen hebt",
-          keyInsights: [
-            "Formeel heb je macht vanwege je positie, maar echte macht moet je verdienen",
-            "Mensen moeten vertrouwen in je hebben en je macht geven",
-            "Ken de mensen aan wie je rapporteert - zij hebben ook macht over jou",
-            "Macht en controle kunnen misbruikt worden"
-          ],
-          fergusonApproach: [
-            "Wilde altijd winnen en daarom alles weten en controleren",
-            "Ontdekte dat extreme controle (micromanagement) niet werkt",
-            "Leerde dat je mensen moet kennen om te kunnen delegeren",
-            "Echte leiders hoeven niet alles te controleren"
-          ],
-          sportExample: "Ferguson wilde eerst elke training, elke tactiek, elke speler controleren. Later leerde hij zijn assistenten te vertrouwen en taken te delegeren, waardoor hij effectiever werd."
+          name: "1. Begin met de Basis",
+          description: "Zorg dat de fundamenten op orde zijn voordat je aan verfijning begint",
+          application: "Focus eerst op discipline, werkethiek en teamcultuur",
+          sportExample: "Ferguson begon altijd met fysieke conditie en mentale instelling voordat hij aan tactiek werkte"
         },
         {
-          name: "2. Mensen Overtuigen",
-          description: "Als leider ben je eigenlijk een verkoper - je moet mensen overtuigen om met jou mee te doen",
-          keyInsights: [
-            "Je moet je visie 'verkopen' aan je team",
-            "Zowel binnen als buiten de organisatie moet je overtuigen",
-            "Succesvol leiderschap vereist dat mensen geloven in jouw plannen",
-            "Overtuigingskracht is essentieel voor elk leider"
-          ],
-          fergusonApproach: [
-            "Verkocht zijn visie van aanvallend, attractief voetbal",
-            "Overtuigde spelers om voor Manchester United te kiezen",
-            "Wist bestuur te overtuigen van zijn lange termijn plannen",
-            "Gebruikte media om zijn boodschap uit te dragen"
-          ],
-          sportExample: "Ferguson overtuigde Cristiano Ronaldo om bij United te blijven toen Real Madrid interesse toonde, door hem te laten zien hoe hij zich verder kon ontwikkelen."
+          name: "2. Discipline en Standaarden", 
+          description: "Stel hoge standaarden en handhaaf deze consequent - geen uitzonderingen, zelfs niet voor sterren",
+          application: "Regels gelden voor iedereen, ongeacht status of prestaties",
+          sportExample: "Ferguson stuurde David Beckham weg toen deze de teamdiscipline ondermijnde, ondanks zijn sterrenstatuur"
         },
         {
-          name: "3. Kijken en Luisteren",
-          description: "Observeren en luisteren zijn cruciale vaardigheden voor effectief leiderschap",
-          keyInsights: [
-            "Ga nooit in het midden van de groep staan, maar aan de buitenkant",
-            "Vanuit de buitenkant kun je beter observeren en andere dingen zien",
-            "Ken je mensen: hoe zijn ze opgevoed, wat motiveert hen",
-            "Luister en kijk naar je mensen om ze goed te leren kennen"
-          ],
-          fergusonApproach: [
-            "Stond altijd aan de zijlijn om alles te kunnen observeren",
-            "Kende de achtergrond van elke speler",
-            "Wist precies hoe hij elke speler moest benaderen",
-            "Gebruikte observatie om tactische aanpassingen te maken"
-          ],
-          sportExample: "Ferguson zag dat Roy Keane gestrest was door zijn lichaamstaal tijdens training, nog voordat Keane zelf doorhad dat hij problemen had."
+          name: "3. Individuele Benadering",
+          description: "Behandel elke speler als uniek individu met eigen behoeften en motivaties",
+          application: "Pas je leiderschapsstijl aan per persoon",
+          sportExample: "Ferguson behandelde Roy Keane anders dan Ryan Giggs, omdat ze verschillende persoonlijkheden hadden"
         },
         {
-          name: "4. Discipline",
-          description: "Discipline staat boven alles en is de basis voor succes",
-          keyInsights: [
-            "Discipline is niet onderhandelbaar",
-            "Wat je afspreekt, ga je doen",
-            "Als je traint, train je - je bent er volledig bij",
-            "Discipline is de basis voor alle andere successen"
-          ],
-          fergusonApproach: [
-            "Gebruikte stilte als disciplinaire maatregel",
-            "Zei gewoon niets als spelers discipline misten",
-            "Spelers wisten dan dat ze in de 'beklaagdenbank' zaten",
-            "Hoefde niemand belachelijk te maken - stilte was genoeg"
-          ],
-          sportExample: "Toen David Beckham te laat kwam op training, zei Ferguson gewoon niets tegen hem. De stilte was zo ongemakkelijk dat Beckham begreep dat hij een fout had gemaakt."
+          name: "4. Lange Termijn Visie",
+          description: "Denk in jaren, niet in wedstrijden - bouw voor de toekomst",
+          application: "Investeer in jeugd en ontwikkeling, niet alleen in snelle resultaten",
+          sportExample: "Ferguson bouwde meerdere generaties teams en investeerde zwaar in de jeugdacademie"
         },
         {
-          name: "5. Organisatie",
-          description: "Leiderschap is voor de lange termijn - zet een goede organisatie neer",
-          keyInsights: [
-            "Niet alleen je team, maar de hele organisatie eromheen",
-            "Neem je tijd voor het opbouwen van structuren",
-            "Denk aan de lange termijn, niet alleen aan vandaag",
-            "Een goede organisatie overleeft individuele personen"
-          ],
-          fergusonApproach: [
-            "Bouwde een sterke jeugdacademie op",
-            "Creëerde een cultuur die groter was dan hijzelf",
-            "Investeerde in faciliteiten en ondersteuning",
-            "Zorgde voor continuïteit na zijn vertrek"
-          ],
-          sportExample: "Ferguson's investering in de jeugdacademie leverde spelers op zoals Beckham, Scholes, Giggs en de Neville broers - een hele generatie topspelers."
+          name: "5. Controle en Autoriteit",
+          description: "Behoud altijd de controle en laat nooit toe dat anderen je autoriteit ondermijnen",
+          application: "Wees duidelijk over wie de beslissingen neemt",
+          sportExample: "Ferguson tolereerde geen spelers die zijn autoriteit in twijfel trokken, ongeacht hun talent"
         },
         {
-          name: "6. Teamwork",
-          description: "Een team is meer dan de som der delen - balans en samenhang zijn cruciaal",
-          keyInsights: [
-            "Je hebt balans nodig - niet allemaal dezelfde types spelers",
-            "Verschillende karakters en posities complementeren elkaar",
-            "Als één speler wegvalt, begint de puzzel opnieuw",
-            "Iedereen moet weten hoe hij in de puzzel past"
-          ],
-          fergusonCriteria: [
-            "Spelers moeten altijd kunnen presteren (geen blessures)",
-            "Je moet op ze kunnen vertrouwen",
-            "Spelers die op meerdere posities kunnen spelen",
-            "Vriendschap en familie-gevoel in het team"
-          ],
-          fergusonApproach: [
-            "Oudere spelers moesten geduld hebben met nieuwkomers",
-            "Investeerde in diepe relaties tussen spelers",
-            "Kende de mening en het oordeel van elke speler",
-            "Maakte beslissingen gebaseerd op teamdynamiek"
-          ],
-          sportExample: "Ferguson combineerde de creativiteit van Cantona met de discipline van Keane en de loyaliteit van Giggs - verschillende karakters die elkaar versterkten."
+          name: "6. Teamwork boven Individualisme",
+          description: "Het team gaat altijd voor individuele belangen",
+          application: "Beloon teamspelers en ontmoedig ego's die het team schaden",
+          sportExample: "Ferguson verkocht talentvolle spelers die het teambelang ondermijnden"
         },
         {
-          name: "7. Afstand Houden",
-          description: "Een leider moet bewust afstand creëren en niet 'one of the guys' zijn",
-          keyInsights: [
-            "Ging altijd vooraan in de bus zitten",
-            "Wilde bewust afstand creëren van de spelers",
-            "Je hoeft niet geliefd te zijn, maar wel gerespecteerd",
-            "Soms is het handig als mensen een beetje bang voor je zijn"
-          ],
-          reasoning: [
-            "Je moet moeilijke beslissingen kunnen nemen",
-            "Het is niet belangrijk dat je geliefd bent",
-            "Respect is belangrijker dan vriendschap",
-            "Afstand maakt moeilijke beslissingen makkelijker"
-          ],
-          fergusonApproach: [
-            "Hielp spelers als ze het moeilijk hadden",
-            "Kende zijn spelers goed maar bleef professioneel",
-            "Nam moeilijke beslissingen over oudere spelers",
-            "Behield autoriteit door afstand"
-          ],
-          sportExample: "Ferguson moest beslissen om legendes zoals Beckham en Keane te laten gaan toen dat nodig was voor het team - afstand maakte dit mogelijk."
+          name: "7. Voortdurende Verbetering",
+          description: "Blijf leren, aanpassen en verbeteren - stilstand is achteruitgang",
+          application: "Zoek constant naar nieuwe methoden en ideeën",
+          sportExample: "Ferguson paste zijn tactieken aan naarmate het voetbal evolueerde en leerde van andere coaches"
         },
         {
-          name: "8. Motivatie",
-          description: "Motiveer mensen door positieve benadering en consistentie",
-          keyInsights: [
-            "Geef complimenten - 'Well done' zijn de krachtigste woorden",
-            "Sla mensen niet, straf niet - dat leidt niet tot verbetering",
-            "Geef kritiek face-to-face, nooit in een groep",
-            "Zeg dingen op een positieve manier"
-          ],
-          fergusonTechniques: [
-            "In plaats van 'die 10 passes waren fout' zei hij 'als je breder speelt ga je beter presteren'",
-            "Wees consistent in je visie en discipline",
-            "Maak geen uitzonderingen (behalve voor exceptioneel talent)",
-            "Wees loyaal - ga achter je spelers staan"
-          ],
-          presence: [
-            "Alleen zijn aanwezigheid motiveerde al",
-            "Spelers presteerden minder als hij er niet was",
-            "Nam 's nachts privévliegtuig terug om bij training te zijn",
-            "De aanwezigheid van een leider motiveert"
-          ],
-          sportExample: "Ferguson vloog 's nachts terug van een scoutingtrip om de volgende ochtend bij de training te zijn, omdat spelers zeiden dat ze minder gemotiveerd waren als hij er niet was."
+          name: "8. Mentale Kracht Ontwikkelen",
+          description: "Bouw veerkracht en mentale sterkte op bij je team",
+          application: "Bereid je team voor op tegenslag en leer ze ermee om te gaan",
+          sportExample: "Ferguson's teams waren beroemd om hun comebacks en mentale sterkte in moeilijke momenten"
         },
         {
-          name: "9. Omgaan met Verlies",
-          description: "Verlies maakt je een betere leider als je ervan leert",
-          keyInsights: [
-            "Leer van elke nederlaag",
-            "Kijk wat je beter kunt doen",
-            "Verlies maakt je scherper",
-            "Zelfs van verliezen word je een betere leider"
-          ],
-          fergusonApproach: [
-            "Analyseerde elke nederlaag grondig",
-            "Gebruikte verlies als motivatie voor verbetering",
-            "Leerde zijn team om van fouten te leren",
-            "Zag verlies als onderdeel van het leerproces"
-          ],
-          sportExample: "Na de Champions League finale verlies tegen Barcelona in 2009 analyseerde Ferguson wat er mis ging en paste zijn tactiek aan voor toekomstige Europese wedstrijden."
+          name: "9. Passie en Emotie",
+          description: "Toon je passie en emotie - dit is aanstekelijk en motiveert anderen",
+          application: "Laat zien dat je om het team en de doelen geeft",
+          sportExample: "Ferguson's emotionele betrokkenheid bij wedstrijden motiveerde spelers om extra te presteren"
         }
       ],
       keyLessons: [
         "Consistentie in leiderschap over lange periode",
-        "Balans tussen discipline en individuele aandacht", 
+        "Balans tussen discipline en individuele aandacht",
         "Nooit compromissen sluiten met kernwaarden",
         "Investeren in mensen en hun ontwikkeling",
         "Aanpassingsvermogen zonder kernprincipes te verliezen"
@@ -860,100 +683,130 @@ const theories: Theory[] = [
     title: "Van Vugt & Wiltschut: Gezag vs Dominantie",
     description: "Mark van Vugt en Wendy Wiltschut onderzochten het verschil tussen gezag (gebaseerd op respect) en dominantie (gebaseerd op macht) in leiderschap.",
     content: {
-      coreDistinction: {
+      introduction: {
         title: "Het Fundamentele Verschil",
-        description: "Gezag en dominantie zijn twee totaal verschillende manieren om invloed uit te oefenen, met verschillende oorzaken en gevolgen."
+        description: "Gezag en dominantie zijn twee totaal verschillende manieren om invloed uit te oefenen. Mensen volgen leiders met gezag omdat ze willen, terwijl ze dominante leiders volgen omdat ze moeten.",
+        contextualNote: "Het is niet altijd beter om op basis van gezag leiding te geven - in sommige situaties kan dominant leiderschap effectiever zijn, afhankelijk van cultuur en situatie."
       },
-      authority: {
-        name: "Gezag (Authority)",
-        definition: "Invloed gebaseerd op respect, vertrouwen en vrijwillige acceptatie",
-        characteristics: [
-          "Mensen volgen je omdat ze je respecteren",
-          "Gebaseerd op competentie en integriteit", 
-          "Vrijwillige onderwerping aan leiderschap",
-          "Duurzaam en stabiel over tijd",
-          "Creëert loyaliteit en commitment"
-        ],
-        sources: [
-          "Expertise en kennis",
-          "Morele integriteit",
-          "Eerder bewezen competentie",
-          "Zorg voor het welzijn van volgers",
-          "Consistentie in woord en daad"
-        ],
-        sportExample: "Een gerespecteerde coach zoals Pep Guardiola heeft gezag - spelers volgen hem omdat ze geloven in zijn methoden en hem als persoon respecteren."
+      fiveComparisons: [
+        {
+          dimension: "1. Volgen: Vrije Keuze vs Dreiging",
+          authority: "Volgen is een vrije keuze - mensen kiezen ervoor om de leider te volgen",
+          dominance: "Volgen onder dreiging - mensen volgen uit dwang of vrees voor consequenties",
+          nuance: "Zelfs bij democratisch gekozen leiders kan er discussie zijn over hoe 'vrij' de keuze werkelijk is voor alle burgers."
+        },
+        {
+          dimension: "2. Perceptie: Respect vs Vrees",
+          authority: "De leider wordt gerespecteerd en bewonderd",
+          dominance: "De dominante wordt gevreesd en gemeden",
+          nuance: "Sommige leiders kunnen zowel gerespecteerd als gevreesd worden, afhankelijk van de context en de persoon."
+        },
+        {
+          dimension: "3. Legitimiteit: Informeel vs Formeel Leiderschap",
+          authority: "Vaak informeel leiderschap - mensen volgen ook zonder formele positie",
+          dominance: "Meestal formeel leiderschap - gebaseerd op positie en hiërarchie",
+          explanation: "Informele leiders worden gevolgd zonder officiële positie, formele leiders hebben een officiële functie. Legitiem leiderschap combineert beide.",
+          examples: {
+            mandela: "Mandela was jarenlang informeel leider tijdens zijn strijd, werd pas later formeel leider als president - toen legitiem leider",
+            biden: "Biden was informeel leider met veel volgers, werd formeel leider als president - nu legitiem leider",
+            trump: "Trump had formele positie als president en veel volgers - legitiem leider, hoewel controversieel"
+          }
+        },
+        {
+          dimension: "4. Focus: Groepsbelang vs Eigenbelang",
+          authority: "Staat ten dienste van de groep en creëert meerwaarde voor iedereen",
+          dominance: "Zet zichzelf centraal en creëert vooral meerwaarde voor zichzelf",
+          examples: {
+            mandela: "Gaf alles op voor de groep - jarenlang gevangenis voor de rechten van zijn volk",
+            biden: "Zegt in acceptance speech: 'Het is mijn taak om die visie waar mensen op hebben gestemd waar te maken'",
+            trump: "Weigert verkiezingsuitslag te accepteren - lijkt meer om zijn ego te gaan dan om het land"
+          }
+        },
+        {
+          dimension: "5. Groepsdynamiek: Samenwerking vs Verdeeldheid",
+          authority: "Bevordert samenwerking en eenheid binnen de groep",
+          dominance: "Creëert verdeeldheid, wantrouwen en interne competitie",
+          examples: {
+            biden: "'Er zijn geen rode staten, geen blauwe staten, alleen de Verenigde Staten' - zoekt samenwerking",
+            trump: "Creëerde meer verdeeldheid en polarisatie tijdens zijn presidentschap"
+          }
+        }
+      ],
+      realWorldExamples: {
+        title: "Voorbeelden uit de Praktijk",
+        mandela: {
+          name: "Nelson Mandela - Gezag",
+          description: "Duidelijk voorbeeld van leiderschap op basis van gezag",
+          characteristics: [
+            "Jarenlang informeel leider zonder positie",
+            "Werd gerespecteerd, niet gevreesd",
+            "Zette groepsbelang boven eigenbelang",
+            "Bevorderde verzoening en samenwerking"
+          ]
+        },
+        bokito: {
+          name: "Bokito (Gorilla) - Dominantie",
+          description: "Voorbeeld van dominant leiderschap in dierenrijk",
+          characteristics: [
+            "Formeel leider door fysieke kracht",
+            "Wordt gevolgd uit vrees",
+            "Zet eigenbelang centraal (toegang tot vrouwtjes)",
+            "Handhaaft positie door intimidatie"
+          ]
+        },
+        biden: {
+          name: "Joe Biden - Genuanceerd",
+          description: "Combinatie van gezag en formeel leiderschap",
+          authorityAspects: [
+            "Had veel volgers voor hij president werd (informeel leider)",
+            "Zoekt samenwerking: 'We zijn allemaal Amerikanen'",
+            "Focus op groepsbelang in acceptance speech"
+          ],
+          complexities: [
+            "Won maar net - bijna helft van land wilde hem niet",
+            "Vraag: in hoeverre is volgen dan vrije keuze voor iedereen?"
+          ]
+        },
+        trump: {
+          name: "Donald Trump - Complex",
+          description: "Moeilijk te categoriseren - heeft aspecten van beide",
+          dominanceAspects: [
+            "Weigert verkiezingsuitslag te accepteren",
+            "Creëert verdeeldheid en polarisatie",
+            "Lijkt soms eigenbelang boven landsbelang te stellen"
+          ],
+          authorityAspects: [
+            "Werd democratisch gekozen - had veel volgers",
+            "'America First' - focus op land verbeteren",
+            "Wordt door veel Amerikanen gerespecteerd en bewonderd"
+          ],
+          nuance: "Niet zo zwart-wit als het lijkt - heeft elementen van beide stijlen"
+        }
       },
-      dominance: {
-        name: "Dominantie (Dominance)", 
-        definition: "Invloed gebaseerd op macht, controle en dwang",
-        characteristics: [
-          "Mensen volgen je omdat ze moeten",
-          "Gebaseerd op angst en consequenties",
-          "Gedwongen onderwerping",
-          "Fragiel en tijdelijk",
-          "Creëert weerstand en compliance"
-        ],
-        sources: [
-          "Fysieke kracht of intimidatie",
-          "Controle over middelen en beloningen",
-          "Hiërarchische positie",
-          "Strafmacht en sancties",
-          "Manipulatie en dwang"
-        ],
-        sportExample: "Een coach die alleen door schreeuwen en straffen controle houdt, gebruikt dominantie - spelers gehoorzamen uit angst, niet uit respect."
+      culturalContext: {
+        title: "Culturele en Situationele Context",
+        description: "De effectiviteit van gezag vs dominantie hangt af van cultuur en situatie",
+        example: "China's aanpak van coronavirus (meer dominant) vs Nederland's aanpak (meer op basis van gezag) - beide hadden verschillende resultaten en consequenties",
+        dutchContext: "In Nederland en vergelijkbare culturen is leiderschap op basis van gezag meestal effectiever, omdat mensen hoger opgeleid zijn en meer autonomie verwachten"
       },
-      evolutionaryPerspective: {
-        title: "Evolutionaire Basis",
-        description: "Beide vormen van leiderschap hebben evolutionaire wortels maar dienen verschillende doelen",
-        authority: "Gezag evolueerde om groepen te helpen samenwerken en complexe problemen op te lossen",
-        dominance: "Dominantie evolueerde voor directe competitie om schaarse middelen"
-      },
-      consequences: {
-        title: "Gevolgen voor Teams",
-        authorityEffects: [
-          "Hogere motivatie en betrokkenheid",
-          "Meer creativiteit en initiatief",
-          "Betere samenwerking binnen het team",
-          "Hogere prestaties op lange termijn",
-          "Lagere verloop en meer loyaliteit"
-        ],
-        dominanceEffects: [
-          "Lagere motivatie, alleen compliance",
-          "Verminderde creativiteit door angst",
-          "Interne competitie en conflicten",
-          "Korte termijn resultaten, lange termijn schade",
-          "Hoog verloop en weerstand"
+      practicalApplication: {
+        title: "Toepassing in de Praktijk",
+        analysis: "Bij het analyseren van leiders, kijk naar alle vijf dimensies:",
+        steps: [
+          "Bepaal waar de leider scoort op elke dimensie (1-10 schaal)",
+          "Sommige leiders scoren links op sommige aspecten, rechts op andere",
+          "Geef een genuanceerde analyse - vermijd zwart-wit denken",
+          "Verklaar waarom bepaalde aspecten meer gezag of dominantie tonen"
         ]
       },
-      genderDifferences: {
-        title: "Geslachtsverschillen",
-        description: "Onderzoek toont interessante verschillen tussen mannen en vrouwen in leiderschap",
-        findings: [
-          "Mannen gebruiken vaker dominantie-strategieën",
-          "Vrouwen gebruiken vaker gezag-strategieën", 
-          "Gemengde teams presteren beter met gezag-gebaseerd leiderschap",
-          "Dominantie wordt bij vrouwen zwaarder bestraft dan bij mannen"
-        ]
-      },
-      practicalImplications: {
-        title: "Praktische Toepassingen",
-        buildingAuthority: [
-          "Ontwikkel echte expertise in je vakgebied",
-          "Toon consistent integriteit en betrouwbaarheid",
-          "Investeer in relaties en vertrouwen",
-          "Luister naar je team en toon empathie",
-          "Neem verantwoordelijkheid voor fouten"
-        ],
-        avoidingDominance: [
-          "Vermijd intimidatie en agressie",
-          "Gebruik macht niet voor persoonlijk gewin",
-          "Creëer geen angstcultuur",
-          "Respecteer de waardigheid van teamleden",
-          "Zoek win-win oplossingen"
-        ]
-      },
-      modernChallenges: "In de moderne sport en samenleving wordt gezag steeds belangrijker omdat mensen hoger opgeleid zijn en meer autonomie verwachten. Dominantie-gebaseerd leiderschap wordt minder geaccepteerd en effectief.",
-      keyMessage: "Effectieve leiders in sport en bewegen bouwen gezag op door competentie, integriteit en zorg voor hun team. Dominantie kan korte termijn compliance geven, maar ondermijnt lange termijn succes."
+      keyInsights: [
+        "Geen enkele leider is 100% gezag of 100% dominantie",
+        "Context en cultuur bepalen welke stijl effectiever is",
+        "Democratische verkiezing betekent niet automatisch gezag",
+        "Formele positie kan gecombineerd worden met informeel leiderschap",
+        "Effectieve analyse vereist nuance en diepgang"
+      ],
+      sportApplication: "In sport zie je beide vormen: coaches die gerespecteerd worden om hun expertise en persoonlijkheid (gezag) versus coaches die vooral door positie en strafmacht leiden (dominantie). De beste sportleiders combineren formele autoriteit met echt respect van hun spelers."
     }
   }
 ]
