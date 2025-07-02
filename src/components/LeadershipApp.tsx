@@ -379,104 +379,174 @@ const theories: Theory[] = [
   {
     id: 'kets-de-vries',
     title: "Kets de Vries: Disfunctioneel Leiderschap",
-    description: "Manfred Kets de Vries identificeerde veelvoorkomende disfunctionele patronen bij leiders die effectiviteit ondermijnen.",
+    description: "Manfred Kets de Vries identificeerde dysfunctionele patronen waardoor leiders ontsporen en incompetent worden.",
     content: {
-      introduction: "Veel leiderschapsproblemen ontstaan door onbewuste psychologische patronen die leiders ontwikkelen als reactie op stress, onzekerheid of trauma.",
+      introduction: "Wanneer een leider dreigt te ontsporen, zie je dysfunctionele patronen - patronen waardoor je als leider eigenlijk niet meer kunt functioneren of incompetent bent als leider.",
       dysfunctionalPatterns: [
         {
           name: "Conflictvermijding",
-          description: "Systematisch vermijden van moeilijke gesprekken en confrontaties",
+          description: "Systematisch vermijden van moeilijke gesprekken en beslissingen",
           characteristics: [
-            "Problemen laten sudderen in plaats van aanpakken",
-            "Hoop dat conflicten vanzelf oplossen",
-            "Angst voor negatieve reacties",
-            "Behoefte om aardig gevonden te worden"
+            "Kan geen grenzen stellen",
+            "Wil door iedereen aardig gevonden worden",
+            "Vermijdt stevige of moeilijke beslissingen",
+            "Komt vaak voort uit jeugdtrauma's"
           ],
           consequences: [
             "Problemen escaleren en worden groter",
-            "Teamleden raken gefrustreerd",
-            "Prestaties dalen door onduidelijkheid",
+            "Teamleden raken gefrustreerd door gebrek aan leiderschap",
+            "Onduidelijkheid over richting en standaarden",
             "Verlies van respect en autoriteit"
           ],
-          sportExample: "Een trainer die niet durft te zeggen dat een populaire speler slecht presteert, waardoor het hele team lijdt onder zijn slechte vorm."
-        },
-        {
-          name: "Micromanagement",
-          description: "Obsessieve controle over elk detail en onvermogen om te delegeren",
-          characteristics: [
-            "Wil alles zelf doen en controleren",
-            "Vertrouwt anderen niet met belangrijke taken",
-            "Bemoeit zich met kleinste details",
-            "Angst om controle te verliezen"
+          examples: [
+            "Bill Clinton - wilde door iedereen aardig gevonden worden",
+            "Richard Branson - zocht iemand naast zich die moeilijke beslissingen kon nemen"
           ],
-          consequences: [
-            "Teamleden voelen zich niet vertrouwd",
-            "Creativiteit en initiatief worden onderdrukt",
-            "Leider wordt overbelast en ineffectief",
-            "Talent vertrekt naar andere organisaties"
-          ],
-          sportExample: "Een coach die elke pass, elke beweging wil controleren en spelers geen ruimte geeft om zelf beslissingen te nemen tijdens het spel."
+          sportExample: "Een trainer die geen harde keuzes durft te maken over opstelling of spelerselectie omdat hij bang is voor negatieve reacties."
         },
         {
           name: "Tiranniseren",
-          description: "Gebruik van intimidatie, agressie en angst om controle te behouden",
+          description: "Mensen echt agressief benaderen en vernietigen",
           characteristics: [
-            "Schreeuwen, bedreigen en vernederen",
-            "Onvoorspelbare woede-uitbarstingen",
-            "Geen tolerantie voor fouten of tegenspraak",
-            "Macht gebruiken om anderen klein te houden"
+            "Agressief gedrag tegen mensen",
+            "Mensen vernietigen en kleinmaken",
+            "Verbale agressie en intimidatie",
+            "Geen tolerantie voor tegenspraak"
           ],
           consequences: [
             "Angstcultuur in het team",
-            "Creativiteit en risico's nemen verdwijnen",
+            "Creativiteit en initiatief verdwijnen",
             "Hoge verloop van personeel",
-            "Lange termijn schade aan vertrouwen"
+            "Lange termijn schade aan vertrouwen en prestaties"
           ],
-          sportExample: "Een trainer die spelers publiekelijk vernedert voor fouten, waardoor ze bang worden om risico's te nemen en hun natuurlijke spel verliezen."
+          examples: [
+            "Stalin - extreme vorm van tiranniek leiderschap",
+            "Kim Jong-un - agressieve controle en onderdrukking",
+            "Trump - verbaal agressief en intimiderend"
+          ],
+          sportExample: "Een coach die spelers publiekelijk vernedert, schreeuwt en bedreigt, waardoor ze bang worden om fouten te maken."
+        },
+        {
+          name: "Micromanagement",
+          description: "Alles willen controleren en geen controle los kunnen laten",
+          characteristics: [
+            "Alle details willen weten en controleren",
+            "Alle contracten zelf willen lezen en tekenen",
+            "Geen delegatie mogelijk",
+            "Obsessie met controle over kleinste details"
+          ],
+          consequences: [
+            "Teamleden voelen zich niet vertrouwd",
+            "Creativiteit en eigenaarschap worden onderdrukt",
+            "Leider wordt overbelast en inefficiënt",
+            "Organisatie kan niet schalen of groeien"
+          ],
+          examples: [
+            "Elon Musk - heeft trekjes van micromanagement",
+            "Leiders die elk detail persoonlijk willen controleren"
+          ],
+          sportExample: "Een trainer die elke pass, elke beweging wil bepalen en spelers geen ruimte geeft voor eigen initiatief tijdens het spel."
         },
         {
           name: "Manisch Gedrag",
-          description: "Hyperactiviteit en onsamenhangende beslissingen - 'heel hard rennen maar de verkeerde kant op'",
+          description: "Heel hyperactief zijn, veel energie hebben maar onsamenhangende beslissingen nemen",
           characteristics: [
-            "Constant bezig zijn zonder duidelijke focus",
-            "Springen van project naar project",
-            "Onrealistische deadlines en verwachtingen",
-            "Geen tijd voor reflectie of planning"
+            "Hyperactiviteit zonder duidelijke focus",
+            "Anderen helemaal gek maken met energie",
+            "Onsamenhangende beslissingen",
+            "Heel hard rennen maar de verkeerde kant op"
           ],
           consequences: [
             "Team raakt uitgeput en verward",
             "Geen consistente richting of strategie",
             "Belangrijke details worden over het hoofd gezien",
-            "Burnout bij leider en team"
+            "Chaos en inefficiëntie in de organisatie"
           ],
-          sportExample: "Een sportdirecteur die constant nieuwe initiatieven start, trainingsmethoden verandert en spelers haalt zonder duidelijke strategie, waardoor niemand weet waar ze aan toe zijn."
-        }
-      ],
-      underlyingCauses: [
-        "Onverwerkte trauma's uit het verleden",
-        "Diepgewortelde onzekerheden en angsten", 
-        "Gebrek aan zelfbewustzijn en reflectie",
-        "Stress en druk van buitenaf",
-        "Slechte rolmodellen in het verleden"
-      ],
-      solutions: [
-        {
-          name: "Zelfbewustzijn Ontwikkelen",
-          description: "Herken je eigen patronen en triggers",
-          methods: ["360-graden feedback", "Coaching", "Zelfreflectie", "Mindfulness"]
+          quote: "We zagen hem heel hard rennen, hij raakte nog net met zijn voeten op de grond, maar de leider liep wel de verkeerde kant op.",
+          sportExample: "Een sportdirecteur die constant nieuwe initiatieven start zonder ze af te maken, waardoor niemand weet waar ze aan toe zijn."
         },
         {
-          name: "Professionele Hulp",
-          description: "Werk met coaches of therapeuten aan onderliggende issues",
-          methods: ["Executive coaching", "Therapie", "Mentoring", "Peer support groepen"]
+          name: "Ontoegankelijkheid",
+          description: "Jezelf compleet afschermen en niet toegankelijk zijn voor andere mensen",
+          characteristics: [
+            "Compleet afschermen van anderen",
+            "Mensen om je heen verzamelen die je beschermen",
+            "Niet snappen wat er in de praktijk gebeurt",
+            "Niet met mensen op de werkvloer praten"
+          ],
+          consequences: [
+            "Verlies van contact met de realiteit",
+            "Slechte besluitvorming door gebrek aan informatie",
+            "Team voelt zich genegeerd en niet gehoord",
+            "Groeiende kloof tussen leider en organisatie"
+          ],
+          examples: [
+            "Kim Jong-un - compleet afgeschermd van de realiteit"
+          ],
+          sportExample: "Een hoofdcoach die zich afschermt van spelers en staf en alleen nog communiceert via assistenten."
         },
         {
-          name: "Systemen Creëren",
-          description: "Bouw structuren die disfunctioneel gedrag voorkomen",
-          methods: ["Regelmatige feedback momenten", "Duidelijke procedures", "Checks and balances", "Team evaluaties"]
+          name: "Spelletjes Spelen",
+          description: "Uitsluitend bezig zijn met macht behouden en mensen tegen elkaar uitspelen",
+          characteristics: [
+            "Alleen eigen belang voorop",
+            "Mensen tegen elkaar uitspelen",
+            "Nooit anderen in het zonnetje zetten die een bedreiging kunnen zijn",
+            "Zorgen dat potentiële concurrenten verdwijnen of degraderen"
+          ],
+          consequences: [
+            "Giftige werkcultuur vol wantrouwen",
+            "Talent vertrekt of wordt weggewerkt",
+            "Focus ligt op politiek in plaats van prestaties",
+            "Organisatie wordt zwakker door verlies van goede mensen"
+          ],
+          sportExample: "Een sportdirecteur die talentvolle assistenten wegwerkt omdat hij bang is dat ze zijn positie bedreigen."
         }
       ],
-      prevention: "De beste preventie is regelmatige zelfreflectie, het vragen van eerlijke feedback, en het creëren van een cultuur waarin mensen veilig de waarheid kunnen spreken."
+      powerCorruption: {
+        title: "Macht en Corruptie",
+        description: "Als je extreme macht hebt, alle macht, dan ben je corrupt - absoluut.",
+        characteristics: [
+          "Van hero tot zero - mensen die alle macht krijgen",
+          "Omringd door leugenaars en jaknikkers",
+          "Hebben allemaal een heel groot ego",
+          "Hebben vaak een gebouw met hun naam erop",
+          "Hebben vaak een veel jongere partner (ego-boost)"
+        ],
+        insight: "Absolute macht corrumpeert absoluut - leiders met alle macht verliezen contact met de realiteit."
+      },
+      solutions: {
+        title: "Herstel van Dysfunctioneel Leiderschap",
+        description: "Kets de Vries ontwikkelde methoden om dysfunctionele patronen te doorbreken:",
+        methods: [
+          {
+            name: "Legacy Vraag",
+            description: "Wat wil je achterlaten? Hoe wil je herinnerd worden?",
+            purpose: "Leiders laten nadenken over hun nalatenschap en impact"
+          },
+          {
+            name: "360 Graden Feedback",
+            description: "Feedback van collega's, familie en alle betrokkenen",
+            purpose: "Laten zien wat het effect is op anderen"
+          },
+          {
+            name: "Eenzaamheid Aanpakken",
+            description: "Hoe bouw je relaties op? Het is 'lonely at the top'",
+            purpose: "Helpen bij het opbouwen van echte verbindingen"
+          },
+          {
+            name: "Controle Loslaten",
+            description: "Omgaan met de angst om controle te verliezen",
+            purpose: "Leren delegeren en vertrouwen in anderen"
+          },
+          {
+            name: "Creativiteit Herwinnen",
+            description: "Word weer creatief, ga weer aan je dromen denken",
+            purpose: "Terugkeren naar authentiek leiderschap"
+          }
+        ]
+      },
+      keyMessage: "Deze dysfunctionele patronen kun je naast je leider leggen om te analyseren in welke mate hij of zij ontspoord of incompetent is als leider."
     }
   },
   {
