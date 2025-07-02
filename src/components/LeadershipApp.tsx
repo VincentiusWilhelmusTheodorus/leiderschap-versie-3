@@ -491,13 +491,6 @@ const theories: Theory[] = [
           sportExample: "Een sportdirecteur die ervoor zorgt dat succesvolle assistenten nooit promotie krijgen en informatie achterhoudt om zijn eigen positie veilig te stellen.",
           realWorldExamples: "Leiders die uitsluitend bezig zijn met 'playing games' om alle macht bij zich te houden, waarbij hun eigen belang voorop staat."
         }
-      ],
-      underlyingCauses: [
-        "Onverwerkte trauma's uit het verleden",
-        "Diepgewortelde onzekerheden en angsten", 
-        "Gebrek aan zelfbewustzijn en reflectie",
-        "Stress en druk van buitenaf",
-        "Slechte rolmodellen in het verleden"
       ]
     }
   },
