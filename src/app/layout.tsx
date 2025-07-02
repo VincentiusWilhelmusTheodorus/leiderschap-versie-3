@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Leiderschap in de Sport - HBO Sportkunde',
-  description: 'Leer over leiderschapstheorieën toegepast op sport - Voor HBO Sportkunde studenten',
+  title: 'Leiderschap in de Wereld van Sport en Bewegen - HBO Sportkunde',
+  description: 'Leer over leiderschapstheorieën toegepast op sport, bewegen en fysieke activiteit - Voor HBO Sportkunde studenten',
 }
 
 export default function RootLayout({
