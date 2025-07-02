@@ -355,7 +355,7 @@ const theories: Theory[] = [
         {
           name: "Bewustwording",
           description: "Erken dat macht je brein verandert en blijf alert op de signalen",
-          application: "Regelmatige zelfreflectie en feedback vragen aan vertrouwde personen"
+          application: "Regelmatig zelfreflectie en feedback vragen aan vertrouwde personen"
         },
         {
           name: "Empathie Oefenen",
@@ -608,74 +608,141 @@ const theories: Theory[] = [
   {
     id: 'ferguson',
     title: "Alex Ferguson's Leiderschapsfilosofie",
-    description: "Sir Alex Ferguson leidde Manchester United 26 jaar lang naar ongekend succes. Zijn 9 leiderschapsprincipes zijn toepasbaar in elke organisatie.",
+    description: "Sir Alex Ferguson leidde Manchester United 26 jaar lang naar ongekend succes. Zijn 9 leiderschapselementen zijn toepasbaar in elke organisatie.",
     content: {
-      introduction: "Sir Alex Ferguson (1941) is een van de meest succesvolle coaches aller tijden. In 26 jaar bij Manchester United won hij 38 trofeeën, waaronder 13 Premier League titels en 2 Champions League cups.",
+      introduction: "Sir Alex Ferguson (1941) is een van de meest succesvolle coaches aller tijden. In 26 jaar bij Manchester United won hij 38 trofeeën, waaronder 13 Premier League titels en 2 Champions League cups. Hij ontwikkelde 9 essentiële elementen voor effectief leiderschap.",
       nineElements: [
         {
-          name: "1. Begin met de Basis",
-          description: "Zorg dat de fundamenten op orde zijn voordat je aan verfijning begint",
-          application: "Focus eerst op discipline, werkethiek en teamcultuur",
-          sportExample: "Ferguson begon altijd met fysieke conditie en mentale instelling voordat hij aan tactiek werkte"
+          name: "1. Macht en Controle & Delegatie",
+          description: "Macht is iets dat je krijgt van mensen - ze geven je vertrouwen zodat je macht en controle over hen hebt",
+          keyPrinciples: [
+            "Formeel heb je macht vanwege je positie, maar echte macht moet je verdienen",
+            "Mensen moeten vertrouwen in je hebben",
+            "Ken de mensen aan wie je rapporteert - zij hebben ook macht over jou",
+            "Micromanagement is een teken van doorgeslagen leiderschap"
+          ],
+          fergusonQuote: "Omdat ik altijd wilde winnen wilde ik eigenlijk alles weten en controleren. Maar ik ontdekte dat extreme controle niet zo'n goed idee is.",
+          lesson: "Echte leiders kennen hun mensen, weten wat ze kunnen en willen, en kunnen daarom delegeren zonder alles te hoeven controleren.",
+          sportExample: "Ferguson leerde dat hij niet elke pass en elke beweging hoefde te controleren - door zijn spelers goed te kennen kon hij hen vertrouwen om zelfstandig beslissingen te nemen."
         },
         {
-          name: "2. Discipline en Standaarden", 
-          description: "Stel hoge standaarden en handhaaf deze consequent - geen uitzonderingen, zelfs niet voor sterren",
-          application: "Regels gelden voor iedereen, ongeacht status of prestaties",
-          sportExample: "Ferguson stuurde David Beckham weg toen deze de teamdiscipline ondermijnde, ondanks zijn sterrenstatuur"
+          name: "2. Mensen Overtuigen",
+          description: "Als leider ben je eigenlijk een verkoper - je moet mensen overtuigen om met jou mee te doen",
+          keyPrinciples: [
+            "Je moet je visie kunnen 'verkopen' binnen en buiten de organisatie",
+            "Overtuigen is essentieel voor succesvol leiderschap",
+            "Mensen moeten geloven in wat jij wilt bereiken"
+          ],
+          fergusonInsight: "Je moet als je succesvol wil zijn als leider, dan moet je mensen overtuigen om met jou mee te doen.",
+          sportExample: "Ferguson moest niet alleen zijn spelers overtuigen van zijn tactiek, maar ook de directie van zijn transferplannen en de media van zijn visie."
         },
         {
-          name: "3. Individuele Benadering",
-          description: "Behandel elke speler als uniek individu met eigen behoeften en motivaties",
-          application: "Pas je leiderschapsstijl aan per persoon",
-          sportExample: "Ferguson behandelde Roy Keane anders dan Ryan Giggs, omdat ze verschillende persoonlijkheden hadden"
+          name: "3. Kijken en Luisteren",
+          description: "Observatie en luisteren zijn fundamentele vaardigheden voor effectief leiderschap",
+          keyPrinciples: [
+            "Ga nooit in het midden van de groep staan, maar aan de buitenkant - dan kan je beter observeren",
+            "Als je in de groep staat is je aandacht op de bal gericht, niet op de mensen",
+            "Zorg dat je alles van je mensen weet - hoe zijn ze opgevoed, wat motiveert hen",
+            "Luister en kijk naar je mensen om ze goed te leren kennen"
+          ],
+          assistantAdvice: "Een assistent trainer zei ooit: 'Ga nooit in het midden van de groep staan. Maar ga aan de buitenkant staan. Dan kan je beter observeren.'",
+          purpose: "Je moet mensen goed kennen om ze te motiveren en het beste uit ze te halen.",
+          sportExample: "Ferguson stond tijdens trainingen vaak aan de zijlijn om het gedrag en de lichaamstaal van zijn spelers te observeren, niet alleen hun technische vaardigheden."
         },
         {
-          name: "4. Lange Termijn Visie",
-          description: "Denk in jaren, niet in wedstrijden - bouw voor de toekomst",
-          application: "Investeer in jeugd en ontwikkeling, niet alleen in snelle resultaten",
-          sportExample: "Ferguson bouwde meerdere generaties teams en investeerde zwaar in de jeugdacademie"
+          name: "4. Discipline",
+          description: "Discipline staat boven alles en is de basis voor succes",
+          keyPrinciples: [
+            "Wat we afspreken, gaan we doen",
+            "Als we trainen, trainen we - je bent er",
+            "Discipline is niet onveranderbaar, maar wel heel belangrijk voor succes",
+            "Stilte kan een krachtig disciplinair middel zijn"
+          ],
+          fergusonMethod: "Als mensen geen discipline hadden, gebruikte Ferguson stilte. Hij zei gewoon niks. Dan wisten mensen dat ze in een soort beklaagdenbankje zaten.",
+          insight: "Je hoeft niemand belachelijk te maken in het openbaar. Stilte is 'killing' op dit punt.",
+          sportExample: "Ferguson's beroemde 'hairdryer treatment' was minder belangrijk dan zijn gebruik van stilte om discipline af te dwingen."
         },
         {
-          name: "5. Controle en Autoriteit",
-          description: "Behoud altijd de controle en laat nooit toe dat anderen je autoriteit ondermijnen",
-          application: "Wees duidelijk over wie de beslissingen neemt",
-          sportExample: "Ferguson tolereerde geen spelers die zijn autoriteit in twijfel trokken, ongeacht hun talent"
+          name: "5. Organisatie",
+          description: "Leiderschap is voor de lange termijn - zet een goede organisatie neer",
+          keyPrinciples: [
+            "Niet alleen je team, maar de hele organisatie eromheen",
+            "Neem daar je tijd voor",
+            "Als je succes wilt hebben, zorg dat je een goede organisatie neerzet"
+          ],
+          longTermFocus: "Ferguson bouwde niet alleen teams, maar een hele infrastructuur bij Manchester United die decennia zou meegaan.",
+          sportExample: "Ferguson investeerde in de jeugdacademie, trainingscentra en de hele cultuur van Manchester United, niet alleen in het eerste elftal."
         },
         {
-          name: "6. Teamwork boven Individualisme",
-          description: "Het team gaat altijd voor individuele belangen",
-          application: "Beloon teamspelers en ontmoedig ego's die het team schaden",
-          sportExample: "Ferguson verkocht talentvolle spelers die het teambelang ondermijnden"
+          name: "6. Teamwork",
+          description: "Een goed team heeft balans, diversiteit en onderlinge verbondenheid",
+          keyPrinciples: [
+            "Er moet balans zijn - je kunt niet allemaal keepers in je team hebben",
+            "Verschillende karakters en mensen die op verschillende posities kunnen spelen",
+            "Realiseer je dat als één speler wegvalt, de puzzel opnieuw begint",
+            "Zorg dat iedereen weet hoe hij in de puzzel past"
+          ],
+          fergusonCriteria: [
+            "Spelers moeten altijd kunnen presteren (geen blessures)",
+            "Je moet op ze kunnen vertrouwen",
+            "Zorg voor spelers die op meerdere posities kunnen spelen"
+          ],
+          friendship: "Mensen moeten vriendschap worden, familie worden. Diepe relaties hebben. Daar moet je als leider op investeren.",
+          mentorship: "Zorg dat oudere teamleden geduld hebben met nieuwkomers - een nieuwkomer in een team is altijd lastig en ongemakkelijk.",
+          sportExample: "Ferguson zorgde ervoor dat ervaren spelers zoals Ryan Giggs en Paul Scholes jonge talenten onder hun hoede namen."
         },
         {
-          name: "7. Voortdurende Verbetering",
-          description: "Blijf leren, aanpassen en verbeteren - stilstand is achteruitgang",
-          application: "Zoek constant naar nieuwe methoden en ideeën",
-          sportExample: "Ferguson paste zijn tactieken aan naarmate het voetbal evolueerde en leerde van andere coaches"
+          name: "7. Afstand Houden",
+          description: "Een leider moet bewust afstand creëren om effectief te kunnen zijn",
+          keyPrinciples: [
+            "Ga vooraan in de bus zitten - creëer bewust afstand",
+            "Sta niet midden in de groep - 'I'm not one of the guys'",
+            "Je hoeft niet geliefd te zijn, maar je moet respect hebben",
+            "Soms is het handig als mensen een beetje bang voor je zijn"
+          ],
+          reasoning: "Je moet moeilijke beslissingen nemen. Het is niet belangrijk dat je geliefd bent, maar dat je respect hebt.",
+          balance: "Als je je spelers goed kent en helpt als ze het moeilijk hebben, krijg je respect. Maar je moet ook moeilijke beslissingen kunnen nemen.",
+          sportExample: "Ferguson zat altijd vooraan in de teambus en at apart van de spelers om zijn autoriteit te behouden, maar was er wel voor hen in moeilijke tijden."
         },
         {
-          name: "8. Mentale Kracht Ontwikkelen",
-          description: "Bouw veerkracht en mentale sterkte op bij je team",
-          application: "Bereid je team voor op tegenslag en leer ze ermee om te gaan",
-          sportExample: "Ferguson's teams waren beroemd om hun comebacks en mentale sterkte in moeilijke momenten"
+          name: "8. Motivatie",
+          description: "Motiveer mensen door positieve benadering, consistentie en loyaliteit",
+          keyPrinciples: [
+            "Geef complimenten - 'Well done' zijn de meest krachtige woorden",
+            "Sla mensen niet, straf niet - dit leidt niet tot verbetering of respect",
+            "Geef kritiek op een positieve manier",
+            "Doe kritiek altijd face-to-face, nooit in een groep"
+          ],
+          positiveApproach: "Niet: 'Die 10 passes waren weer fout.' Maar: 'Als je wat breder speelt ga je beter presteren.'",
+          consistency: "Wees consistent - je hebt een visie, een koers, je vereist discipline. Hou dat vol. Maak in principe geen uitzonderingen.",
+          exceptionalTalent: "Tenzij een speler exceptioneel veel talent heeft - denk aan hoe Guus Hiddink met Romario omging.",
+          loyalty: "Ga achter je spelers staan. Als een speler iets fout doet, zeg dat het fout is omdat je nog in hem gelooft.",
+          presence: "Alleen je aanwezigheid als leider motiveert al. Ferguson nam 's nachts een privévliegtuig terug om de volgende ochtend bij de training te zijn.",
+          sportExample: "Ferguson verdedigde Cantona na zijn beruchte karateschop omdat hij in hem geloofde, maar maakte wel duidelijk dat het gedrag onaceptabel was."
         },
         {
-          name: "9. Passie en Emotie",
-          description: "Toon je passie en emotie - dit is aanstekelijk en motiveert anderen",
-          application: "Laat zien dat je om het team en de doelen geeft",
-          sportExample: "Ferguson's emotionele betrokkenheid bij wedstrijden motiveerde spelers om extra te presteren"
+          name: "9. Omgaan met Verlies",
+          description: "Verlies is een kans om te leren en een betere leider te worden",
+          keyPrinciples: [
+            "Leer van verlies - kijk wat je beter kunt doen",
+            "Verlies maakt je scherper",
+            "Zelfs van verliezen word je een betere leider"
+          ],
+          fergusonPhilosophy: "Ferguson zag elke nederlaag als een leermoment en gebruikte het om zijn team en zichzelf te verbeteren.",
+          sportExample: "Na de pijnlijke nederlaag tegen Barcelona in 2009 analyseerde Ferguson wat er fout ging en paste zijn tactiek aan voor toekomstige Europese wedstrijden."
         }
       ],
       keyLessons: [
-        "Consistentie in leiderschap over lange periode",
-        "Balans tussen discipline en individuele aandacht",
-        "Nooit compromissen sluiten met kernwaarden",
-        "Investeren in mensen en hun ontwikkeling",
-        "Aanpassingsvermogen zonder kernprincipes te verliezen"
+        "Macht moet je verdienen door vertrouwen, niet alleen door positie",
+        "Observatie en luisteren zijn even belangrijk als spreken",
+        "Discipline is de basis, maar motivatie door positieve benadering",
+        "Balans tussen afstand houden en er zijn voor je mensen",
+        "Consistentie in visie en waarden, flexibiliteit in aanpak",
+        "Investeer in de hele organisatie, niet alleen het team",
+        "Leer van elke nederlaag en gebruik het om sterker te worden"
       ],
-      legacy: "Ferguson's succes kwam niet van één seizoen, maar van 26 jaar consequent toepassen van zijn principes. Hij toonde aan dat effectief leiderschap draait om mensen, niet alleen om tactiek.",
-      modernApplication: "Ferguson's principes zijn nog steeds relevant in moderne sport en business: duidelijke waarden, individuele aandacht, lange termijn denken en het opbouwen van sterke culturen."
+      legacy: "Ferguson's succes kwam van 26 jaar consequent toepassen van deze 9 elementen. Hij toonde aan dat effectief leiderschap draait om mensen begrijpen, vertrouwen opbouwen en een cultuur creëren waarin iedereen kan excelleren.",
+      modernApplication: "Ferguson's elementen zijn nog steeds relevant: echte macht komt van vertrouwen, observatie is belangrijker dan controle, en positieve motivatie werkt beter dan straffen."
     }
   },
   {
@@ -686,59 +753,61 @@ const theories: Theory[] = [
       introduction: {
         title: "Het Fundamentele Verschil",
         description: "Gezag en dominantie zijn twee totaal verschillende manieren om invloed uit te oefenen, met verschillende oorzaken en gevolgen.",
-        contextualNote: "Hoewel gezag meestal beter is, kan dominantie in bepaalde situaties effectiever zijn - denk aan crisissituaties of culturele verschillen."
+        contextualNote: "In sommige situaties kan dominantie effectiever zijn dan gezag - denk aan China's aanpak van coronavirus versus Nederland's aanpak. Maar over het algemeen, zeker in Nederland, is gezag de betere optie voor organisatieleiders."
       },
       fiveComparisons: [
         {
           dimension: "1. Volgen: Vrije Keuze vs Onder Dreiging",
-          authority: "Mensen volgen vrijwillig omdat ze geloven in de leider",
-          dominance: "Mensen volgen uit angst voor consequenties",
-          explanation: "Dit is het meest fundamentele verschil - de motivatie achter het volgen.",
+          authority: "Volgen is een vrije keuze - mensen kiezen ervoor om je te volgen",
+          dominance: "Volgen onder dreiging - mensen volgen uit dwang of vrees voor consequenties",
+          explanation: "Dit is het meest fundamentele verschil tussen beide leiderschapsstijlen.",
           examples: {
-            mandela: "Mensen volgden Mandela omdat ze in zijn visie geloofden",
-            bokito: "Andere apen volgen Bokito uit angst voor zijn fysieke kracht"
-          },
-          nuance: "Zelfs bij democratisch gekozen leiders kan er sprake zijn van gedwongen volgen voor degenen die niet op hen stemden."
-        },
-        {
-          dimension: "2. Perceptie: Gerespecteerd vs Gevreesd",
-          authority: "De leider wordt bewonderd en gerespecteerd als persoon",
-          dominance: "De leider wordt gevreesd en vermeden",
-          explanation: "Dit bepaalt de kwaliteit van de relatie tussen leider en volgers.",
-          examples: {
-            biden: "Wordt gerespecteerd om zijn ervaring en integriteit",
-            trump: "Roept zowel bewondering als angst op, afhankelijk van perspectief"
+            mandela: "Mensen volgden Mandela vrijwillig vanwege zijn morele autoriteit",
+            bokito: "Andere apen volgen Bokito uit angst voor zijn fysieke dominantie"
           }
         },
         {
-          dimension: "3. Formeel vs Informeel Leiderschap",
-          authority: "Kan zowel formeel (positie) als informeel (natuurlijk) zijn",
-          dominance: "Meestal gebaseerd op formele positie of fysieke macht",
-          explanation: "Gezag kan ontstaan zonder officiële positie, dominantie vereist meestal macht.",
+          dimension: "2. Perceptie: Respect vs Vrees",
+          authority: "De leider wordt gerespecteerd en bewonderd",
+          dominance: "De dominante wordt gevreesd en gemeden",
+          explanation: "Respect creëert loyaliteit, vrees creëert alleen compliance.",
           examples: {
-            mandela: "Was lange tijd informeel leider voordat hij president werd",
-            bokito: "Heeft formele positie als alfamannetje in de groep"
+            biden: "Biden probeerde respect te winnen met zijn acceptance speech",
+            trump: "Trump gebruikte vaak intimidatie en vrees als leiderschapsstijl"
           }
         },
         {
-          dimension: "4. Belang: Groep vs Eigen Belang",
-          authority: "Leider stelt groepsbelang centraal en creëert meerwaarde voor allen",
-          dominance: "Leider stelt eigen belang centraal en profiteert ten koste van anderen",
-          explanation: "Dit bepaalt of leiderschap duurzaam en ethisch is.",
+          dimension: "3. Legitimiteit: Informeel vs Formeel Leiderschap",
+          authority: "Informeel leider - wordt gevolgd ook zonder formele positie",
+          dominance: "Formeel leider - macht komt vooral van de positie",
+          nuance: "De beste leiders zijn 'legitiem' - ze hebben zowel de formele positie als de informele acceptatie.",
+          explanation: "Mandela was jarenlang informeel leider voordat hij president werd. Biden was informeel leider met veel volgers voordat hij president werd.",
           examples: {
-            mandela: "Gaf alles op voor de bevrijding van zijn volk",
-            trump: "Wordt soms beschuldigd van eigenbelang boven landsbelang"
-          },
-          nuance: "Zelfs gezagsleiders moeten soms moeilijke beslissingen nemen die niet iedereen bevallen."
+            mandela: "Lange tijd informeel leider, later legitiem als president",
+            bokito: "Vooral formeel leider door zijn dominante positie",
+            biden: "Van informeel leider naar legitiem leider als president"
+          }
+        },
+        {
+          dimension: "4. Focus: Groepsbelang vs Eigenbelang",
+          authority: "Het belang van de groep staat centraal - creëert meerwaarde voor iedereen",
+          dominance: "Het belang van de dominante staat centraal - meerwaarde voor zichzelf",
+          explanation: "Gezagsleiders offeren zichzelf op voor de groep, dominante leiders gebruiken de groep voor eigen gewin.",
+          examples: {
+            mandela: "Gaf alles op voor zijn volk - jarenlang in gevangenis voor de groep",
+            bokito: "Staat bovenaan, krijgt alle vrouwen - het gaat om hem",
+            biden: "Zei in zijn speech dat hij de visie van het volk wilde waarmaken",
+            trump: "Weigerde nederlaag te accepteren - ging tegen groepsbelang in voor eigen ego"
+          }
         },
         {
           dimension: "5. Groepsdynamiek: Samenwerking vs Verdeeldheid",
-          authority: "Bevordert samenwerking en eenheid binnen de groep",
-          dominance: "Creëert competitie en verdeeldheid, 'verdeel en heers'",
-          explanation: "Dit bepaalt de lange termijn effectiviteit van het leiderschap.",
+          authority: "Versterkt samenwerking en eenheid binnen de groep",
+          dominance: "Stimuleert wantrouwen, competitie en verdeeldheid",
+          explanation: "Gezagsleiders brengen mensen samen, dominante leiders verdelen om te heersen.",
           examples: {
-            biden: "Probeerde eenheid te brengen: 'geen rode of blauwe staten, alleen Verenigde Staten'",
-            trump: "Creëerde vaak polarisatie en verdeeldheid"
+            biden: "'Er zijn geen rode staten, geen blauwe staten, alleen de Verenigde Staten' - zoekt samenwerking",
+            trump: "Creëerde meer verdeeldheid en polarisatie tijdens zijn presidentschap"
           }
         }
       ],
@@ -746,240 +815,239 @@ const theories: Theory[] = [
         title: "Praktijkvoorbeelden",
         mandela: {
           name: "Nelson Mandela - Gezag",
-          description: "Perfect voorbeeld van gezagsleiderschap gebaseerd op respect en morele autoriteit.",
+          description: "Het perfecte voorbeeld van leiderschap op basis van gezag",
           characteristics: [
-            "Mensen volgden hem vrijwillig",
-            "Werd wereldwijd gerespecteerd",
-            "Was lange tijd informeel leider",
-            "Stelde groepsbelang boven eigenbelang",
-            "Bracht verzoening in plaats van verdeeldheid"
+            "Mensen volgden hem vrijwillig vanwege zijn morele autoriteit",
+            "Werd gerespecteerd, niet gevreesd",
+            "Lange tijd informeel leider, later legitiem als president",
+            "Offerde zichzelf op voor het groepsbelang",
+            "Bracht verdeelde groepen samen"
           ]
         },
         bokito: {
           name: "Bokito - Dominantie",
-          description: "Voorbeeld van dominantie gebaseerd op fysieke kracht en intimidatie.",
+          description: "Voorbeeld van puur dominante leiderschap",
           characteristics: [
-            "Anderen volgen uit angst",
+            "Anderen volgen uit angst voor zijn fysieke kracht",
             "Wordt gevreesd, niet gerespecteerd",
-            "Formele positie als alfamannetje",
-            "Eigen belang staat centraal",
-            "Houdt groep onder controle door intimidatie"
+            "Vooral formeel leider door dominante positie",
+            "Gebruikt positie voor eigen voordeel (vrouwen, voedsel)",
+            "Houdt groep in bedwang door intimidatie"
           ]
         },
         biden: {
           name: "Joe Biden - Complexe Mix",
-          description: "Toont zowel gezags- als dominantie-aspecten, afhankelijk van perspectief.",
+          description: "Toont zowel gezag als dominantie aspecten",
           authorityAspects: [
-            "Lange ervaring en expertise",
-            "Probeerde eenheid te brengen",
-            "Focus op herstel en samenwerking",
-            "Erkende zorgen van tegenstanders"
+            "Won met 'de meeste stemmen ooit' - suggereert vrijwillige keuze",
+            "Benadrukte in acceptance speech dat hij voor het volk werkt",
+            "Zocht samenwerking: 'We zijn allemaal Amerikanen'",
+            "Van informeel naar legitiem leider"
           ],
           complexities: [
-            "Bijna helft van land stemde tegen hem",
-            "Moet soms dominantie gebruiken om te regeren",
-            "Formele macht vs informele acceptatie",
-            "Verschillende percepties afhankelijk van politieke voorkeur"
+            "Won maar net - bijna helft van land wilde hem niet",
+            "Veel mensen worden 'gedwongen' hem te volgen",
+            "Vraag: in hoeverre is volgen dan echt vrije keuze?"
           ]
         },
         trump: {
           name: "Donald Trump - Genuanceerd Beeld",
-          description: "Vaak gezien als dominant, maar toont ook gezagsaspecten voor zijn achterban.",
+          description: "Toont dat leiders niet zwart-wit zijn - mix van dominantie en gezag",
           dominanceAspects: [
-            "Gebruik van intimidatie en agressie",
-            "Polariserende retoriek",
-            "Eigen belang lijkt soms voorop te staan",
-            "Creëert verdeeldheid"
+            "Weigerde nederlaag te accepteren - eigen ego boven groepsbelang",
+            "Gebruikte vaak intimidatie en vrees",
+            "Creëerde verdeeldheid en polarisatie",
+            "Focus op eigen imago en macht"
           ],
           authorityAspects: [
-            "Grote loyale achterban die hem respecteert",
-            "'America First' - focus op landsbelang",
-            "Werd democratisch gekozen",
-            "Bracht samenwerking binnen zijn achterban"
+            "Werd wel gekozen tot president - suggereert respect van groot deel volk",
+            "'America First' - probeerde wel Amerika beter te maken",
+            "Creëerde meerwaarde voor veel Amerikanen",
+            "Zocht samenwerking binnen Amerika"
           ],
-          nuance: "Het is niet zo zwart-wit - Trump toont dominantie naar tegenstanders maar gezag naar aanhangers."
+          nuance: "Het is niet zo zwart-wit. Je moet dieper nadenken en genuanceerd analyseren hoe leiders scoren op verschillende aspecten."
         }
       },
       culturalContext: {
         title: "Culturele en Situationele Context",
         description: "De effectiviteit van gezag vs dominantie hangt af van cultuur en situatie.",
-        example: "China's dominante aanpak van COVID-19 vs Nederland's gezagsgerichte aanpak - beide hadden voor- en nadelen.",
-        dutchContext: "In Nederland wordt gezagsleiderschap meestal geprefereerd vanwege onze democratische cultuur en hoge opleidingsniveau."
+        example: "China's dominante aanpak van coronavirus was effectiever dan Nederland's gezagsgerichte aanpak met vrijheden en inspraak.",
+        dutchContext: "In Nederland en vergelijkbare culturen is gezag meestal effectiever omdat mensen hoger opgeleid zijn en meer autonomie verwachten."
       },
       practicalApplication: {
-        title: "Praktische Toepassing in Analyse",
-        analysis: "Bij het analyseren van een leider, kijk naar alle vijf dimensies en geef een genuanceerd beeld.",
+        title: "Praktische Toepassing voor Analyse",
+        analysis: "Bij het analyseren van een leider, kijk naar alle vijf dimensies en geef een genuanceerd beeld:",
         steps: [
-          "Analyseer elke dimensie afzonderlijk",
-          "Geef concrete voorbeelden bij elke dimensie",
-          "Erken dat leiders aspecten van beide kunnen tonen",
-          "Houd rekening met context en perspectief",
-          "Vermijd zwart-wit denken"
+          "Pak een voorbeeld van de leider",
+          "Analyseer in welke aspecten hij/zij links scoort (gezag)",
+          "Analyseer in welke aspecten hij/zij rechts scoort (dominantie)",
+          "Sommige leiders zijn volledig links of rechts, anderen hebben een mix",
+          "Geef een genuanceerd antwoord met concrete voorbeelden"
         ]
       },
       keyInsights: [
-        "Gezag is meestal duurzamer dan dominantie",
-        "Dominantie kan in crisissituaties effectiever zijn",
-        "Culturele context bepaalt wat geaccepteerd wordt",
-        "Leiders kunnen beide aspecten tonen in verschillende situaties",
-        "Perceptie hangt af van het perspectief van de waarnemer"
+        "Gezag en dominantie zijn niet zwart-wit - de meeste leiders tonen aspecten van beide",
+        "Context en cultuur bepalen welke stijl effectiever is",
+        "In moderne, democratische samenlevingen is gezag meestal effectiever",
+        "Analyse van leiders vereist nuance en concrete voorbeelden",
+        "Legitiem leiderschap (formeel + informeel) is het meest effectief"
       ],
-      sportApplication: "In sport zie je beide vormen: een gerespecteerde aanvoerder (gezag) vs een intimiderende coach (dominantie). De beste sportleiders combineren beide wanneer de situatie erom vraagt."
+      sportApplication: "In sport zie je beide stijlen: sommige coaches regeren door angst (dominantie), anderen door respect en vertrouwen (gezag). De meest succesvolle sportleiders combineren formele autoriteit met echte expertise en persoonlijk charisma."
     }
   },
   {
     id: 'authority-development',
-    title: "Wiltschut & Van Vugt: Ontwikkelen van Gezag",
-    description: "Wiltschut en Van Vugt beschrijven vijf essentiële componenten voor het ontwikkelen van gezag als leider, geïllustreerd aan de hand van Virgil van Dijk.",
+    title: "Ontwikkeling van Gezag",
+    description: "Wiltschut en Van Vugt beschrijven vijf componenten die essentieel zijn voor het ontwikkelen van gezag als leider, geïllustreerd aan de hand van Virgil van Dijk als aanvoerder van het Nederlands elftal.",
     content: {
       introduction: {
         title: "Hoe Ontwikkel Je Gezag?",
-        description: "Gezag is niet iets wat je automatisch krijgt - het moet ontwikkeld worden door bewust te werken aan vijf kerncomponenten.",
-        keyInsight: "Mensen volgen je alleen als leider wanneer je aan bepaalde voorwaarden voldoet en jezelf continu ontwikkelt."
+        description: "Er zijn vijf componenten die bepalen of mensen je willen volgen als leider. Deze theorie laat zien hoe je gezag kunt opbouwen en behouden.",
+        keyInsight: "Goede leiders worden niet geboren, maar ontwikkelen hun gezag door bewust aan deze vijf componenten te werken."
       },
       fiveComponents: [
         {
           name: "1. Vind Je Niche - Doe Waar Je Sterk In Bent",
-          description: "Je moet echte kwaliteiten en competenties hebben die relevant zijn voor de groep die je wilt leiden.",
-          keyPrinciple: "Leiderschap vereist een combinatie van persoonlijke kwaliteiten en wat de omgeving nodig heeft.",
+          description: "Je moet wel bepaalde kwaliteiten hebben om een leider te zijn. Het is altijd een combinatie tussen de persoon die je bent en wat de omgeving nodig heeft.",
+          keyPrinciple: "Kwaliteit ontstaat uit de match tussen jouw sterke punten en wat de groep nodig heeft.",
           characteristics: [
-            "Bewezen expertise in je vakgebied",
-            "Kwaliteiten die de groep respecteert",
-            "Match tussen jouw sterke punten en groepsbehoeften",
-            "Voortdurende ontwikkeling van je competenties"
+            "Je moet echt goed zijn in wat je doet",
+            "Kwaliteit is een combinatie van persoon en omgevingsbehoeften",
+            "Zonder competentie geen respect",
+            "Je moet je waarde hebben bewezen"
           ],
           sportExample: {
             example: "Virgil van Dijk als aanvoerder Nederlands elftal",
-            explanation: "Van Dijk is wereldtop als verdediger, waardoor hij natuurlijk respect verdient van zijn teamgenoten. Het zou onlogisch zijn als een reservespeler zonder internationale ervaring aanvoerder zou worden.",
-            lesson: "Leiderschap begint met competentie - je moet eerst goed zijn in wat je doet voordat anderen je willen volgen."
+            explanation: "Van Dijk is wereldtop en daarom logisch dat hij aanvoerder is. Het zou verbazingwekkend zijn als een speler zonder internationale reputatie aanvoerder zou worden.",
+            lesson: "Je moet genoeg respect hebben verdiend met je kwaliteiten om een leiderschapspositie op te pakken."
           },
           practicalTips: [
-            "Ontwikkel expertise die relevant is voor je team",
-            "Zorg dat je prestaties spreken voor zich",
-            "Blijf jezelf verbeteren en leren",
-            "Wees de beste in wat belangrijk is voor de groep"
+            "Ontwikkel expertise in je vakgebied",
+            "Zorg dat je prestaties zichtbaar zijn",
+            "Begrijp wat je organisatie/team nodig heeft",
+            "Bouw een track record op van successen"
           ]
         },
         {
-          name: "2. Inlevingsvermogen - Leef Je In In Ondergeschikten",
-          description: "Begrijp hoe je teamleden in elkaar zitten en pas je leiderschapsstijl aan per persoon.",
-          keyPrinciple: "Iedereen is anders en heeft een unieke aanpak nodig - one size fits none.",
+          name: "2. Inlevingsvermogen - Begrijp Je Mensen",
+          description: "Het is heel belangrijk dat je begrijpt hoe je teamleden in elkaar zitten. Iedereen is anders en vraagt een andere benadering.",
+          keyPrinciple: "Effectieve leiders passen hun stijl aan per persoon omdat iedereen uniek is.",
           characteristics: [
-            "Actief luisteren naar teamleden",
-            "Begrijpen van individuele motivaties",
-            "Aanpassen van communicatiestijl per persoon",
-            "Empathie tonen voor verschillende perspectieven"
+            "Begrijp hoe mensen in elkaar zitten",
+            "Iedereen is anders en vraagt andere benadering",
+            "Leer hoe mensen leren en zich ontwikkelen",
+            "Investeer tijd in het leren kennen van individuen"
           ],
           sportExample: {
-            example: "Van Dijk's verschillende aanpak per speler",
-            explanation: "Van Dijk gaat anders om met jonge talenten zoals De Ligt en Frenkie de Jong dan met ervaren spelers zoals Wijnaldum. Jonge spelers hebben andere begeleiding nodig dan gevestigde namen.",
-            lesson: "Effectieve leiders behandelen niet iedereen hetzelfde, maar geven iedereen wat hij nodig heeft."
+            example: "Van Dijk's omgang met verschillende spelers",
+            explanation: "Hij gaat anders om met jonge talenten zoals De Ligt en Frenkie de Jong dan met ervaren spelers zoals Wijnaldum. Beide groepen hebben verschillende behoeften.",
+            lesson: "Als je goed begrijpt aan wie je leiding geeft en je leeft je echt in, word je meer gerespecteerd en zullen ze je eerder volgen."
           },
           practicalTips: [
-            "Leer je teamleden persoonlijk kennen",
-            "Vraag naar hun doelen en zorgen",
-            "Pas je communicatie aan per persoon",
-            "Toon interesse in hun ontwikkeling"
+            "Voer regelmatig één-op-één gesprekken",
+            "Leer over achtergronden en motivaties van teamleden",
+            "Pas je communicatiestijl aan per persoon",
+            "Toon oprechte interesse in mensen als individu"
           ]
         },
         {
-          name: "3. Dien De Groep - Groepsbelang Boven Eigenbelang",
-          description: "Zet het succes van het team altijd boven je eigen belangen - dit creëert vertrouwen en loyaliteit.",
-          keyPrinciple: "Mensen volgen leiders die hetzelfde doel nastreven als zij, niet leiders die alleen aan zichzelf denken.",
+          name: "3. Dien de Groep - Groepsbelang Boven Eigenbelang",
+          description: "Ga niet voor je eigen belang, maar ga voor het belang van de groep. Dan zullen mensen je eerder volgen omdat je hetzelfde doel hebt.",
+          keyPrinciple: "Mensen volgen leiders die het groepsbelang boven hun eigenbelang stellen.",
           characteristics: [
-            "Beslissingen nemen in het belang van het team",
-            "Persoonlijke offers brengen voor groepssucces",
-            "Transparant zijn over motivaties",
-            "Voorbeeldfunctie vervullen"
+            "Groepsbelang staat altijd voorop",
+            "Niet bezig zijn met eigen imago of voordeel",
+            "Voorbeeldfunctie nemen",
+            "Anderen helpen ontwikkelen"
           ],
           sportExample: {
-            example: "Van Dijk vs Ronaldo als aanvoerder",
-            explanation: "Van Dijk focust op teamwinst en helpt anderen beter te worden. Ronaldo, hoewel briljant, schiet soms zelf wanneer een teamgenoot beter gepositioneerd staat. Wie zou je eerder volgen?",
-            lesson: "Teamspelers krijgen meer respect als leider dan individualisten, ook al zijn die individualisten technisch beter."
+            example: "Van Dijk vs Ronaldo",
+            explanation: "Van Dijk is duidelijk bezig met winnen voor het team. Ronaldo daarentegen schiet vaak zelf ook als een teamgenoot beter staat - is hij bezig met winnen of met goals maken?",
+            lesson: "Mensen volgen eerder iemand die de groep dient dan iemand die vooral met zichzelf bezig is."
           },
           quote: "Ik ben nu een van de spelers aan wie de rest gaat optrekken en dat past ook bij me.",
           practicalTips: [
-            "Neem beslissingen die het team ten goede komen",
-            "Deel credits voor successen met het team",
-            "Offer persoonlijke voordelen op voor teamdoelen",
-            "Wees transparant over je motivaties"
+            "Neem beslissingen op basis van teambelang",
+            "Geef anderen de credits voor successen",
+            "Investeer in ontwikkeling van teamleden",
+            "Toon voorbeeldgedrag in alles wat je doet"
           ]
         },
         {
           name: "4. Timing - Ken Je Moment",
-          description: "Weet wanneer je wel en wanneer je niet moet optreden als leider - timing is cruciaal voor effectiviteit.",
-          keyPrinciple: "Er is een tijd om te leiden en een tijd om te volgen - wijze leiders kennen het verschil.",
+          description: "Wanneer moet je optreden en wanneer niet? Je moet niet te veel doen, niet te weinig doen. Timing is cruciaal voor effectief leiderschap.",
+          keyPrinciple: "Effectieve leiders weten wanneer ze moeten handelen en wanneer ze zich terug moeten trekken.",
           characteristics: [
-            "Situationeel bewustzijn ontwikkelen",
-            "Weten wanneer je stem nodig is",
-            "Ruimte geven aan anderen wanneer het goed gaat",
-            "Optreden wanneer het team je nodig heeft"
+            "Weten wanneer wel en niet op te treden",
+            "Gevoel hebben voor de juiste momenten",
+            "Niet te veel, niet te weinig doen",
+            "Situationeel bewustzijn hebben"
           ],
           sportExample: {
-            example: "Van Dijk's timing als leider",
-            explanation: "Vroeger voelde Van Dijk dat hij nog niet de status had om leiding te geven. Nu hij gevestigd is, kan hij wel die rol pakken. Als hij geblesseerd is en het team presteert goed, blijft hij weg. Gaat het slecht, dan stapt hij de kleedkamer binnen.",
-            lesson: "Effectieve leiders forceren hun leiderschap niet, maar pakken de rol wanneer de situatie erom vraagt."
+            example: "Van Dijk's ontwikkeling als leider",
+            explanation: "Eerder zei hij: 'Het team zat in overgangsperiode, het was zoeken. Ik had toen nog niet de status van volwaardige international.' Hij wist dat de timing toen verkeerd was om leiding te geven.",
+            lesson: "Je moet wel de kwaliteit en status hebben om boven de groep te staan voordat je leiderschapsrol kunt pakken."
           },
           practicalTips: [
-            "Lees de situatie voordat je optreedt",
-            "Geef anderen ruimte wanneer het goed gaat",
-            "Stap naar voren in moeilijke momenten",
-            "Bouw eerst je status op voordat je leiding claimt"
+            "Bouw eerst je credibiliteit op voordat je leidt",
+            "Lees de situatie goed - wanneer is interventie nodig?",
+            "Weet wanneer je moet spreken en wanneer je moet zwijgen",
+            "Respecteer de ontwikkelingsfase van je team"
           ]
         },
         {
-          name: "5. Gedraag Je - Wees Eerlijk, Betrouwbaar en Ethisch",
-          description: "Leef volgens hoge ethische standaarden en geef het goede voorbeeld - integriteit is de basis van gezag.",
-          keyPrinciple: "Je gedrag bepaalt of mensen je vertrouwen en respecteren op de lange termijn.",
+          name: "5. Gedraag Je - Wees Eerlijk en Betrouwbaar",
+          description: "Wees altijd eerlijk, betrouwbaar en ethisch. Het is een soort ethisch component - geef het goede voorbeeld.",
+          keyPrinciple: "Integriteit en voorbeeldgedrag zijn fundamenteel voor gezag.",
           characteristics: [
-            "Consistent gedrag in alle situaties",
-            "Eerlijkheid en transparantie",
-            "Betrouwbaarheid in woord en daad",
-            "Hoge ethische standaarden"
+            "Altijd eerlijk en betrouwbaar zijn",
+            "Ethisch gedrag in alle situaties",
+            "Goede voorbeeld geven",
+            "Consistent zijn in woord en daad"
           ],
           sportExample: {
             example: "Van Dijk als rolmodel",
-            explanation: "Van Dijk wordt een rolmodel genoemd voor teamgenoten en jonge supporters. Hij komt niet in de problemen, doet geen gekke dingen en leeft als een echte professional. Dit geeft hem geloofwaardigheid als leider.",
-            lesson: "Leiders die zich niet professioneel gedragen, verliezen respect en geloofwaardigheid, ongeacht hun talent."
+            explanation: "Hij wordt een rolmodel genoemd voor teamgenoten en jonge supporters. Hij is een echte professional, komt niet in problemen en doet geen gekke dingen.",
+            lesson: "Als je extravagant leeft of gekke dingen doet, nemen mensen je minder serieus als leider van een groep."
           },
           practicalTips: [
-            "Leef volgens de waarden die je predikt",
-            "Wees consistent in je gedrag",
+            "Houd je aan afspraken en beloftes",
+            "Wees transparant in je communicatie",
             "Neem verantwoordelijkheid voor je fouten",
-            "Geef het goede voorbeeld in alles wat je doet"
+            "Leef volgens de waarden die je predikt"
           ]
         }
       ],
       continuousDevelopment: {
-        title: "Continue Ontwikkeling",
-        description: "Gezag ontwikkelen is geen eenmalige actie maar een continu proces van groei en verbetering.",
+        title: "Voortdurende Ontwikkeling",
+        description: "Gezag is niet iets dat je eenmaal hebt en dan behoudt. Het vereist constante aandacht en ontwikkeling.",
         components: [
-          "Regelmatige zelfreflectie op alle vijf componenten",
-          "Feedback vragen aan teamleden en collega's",
-          "Blijven leren en je competenties uitbreiden",
-          "Aanpassen aan veranderende omstandigheden",
-          "Investeren in relaties en vertrouwen"
+          "Blijf werken aan je competenties (niche)",
+          "Blijf leren over je mensen (inlevingsvermogen)",
+          "Blijf het groepsbelang voorop stellen",
+          "Blijf je timing verbeteren",
+          "Blijf integer en betrouwbaar"
         ]
       },
       practicalApplication: {
         title: "Praktische Toepassing",
-        analysis: "Gebruik deze vijf componenten om leiders te analyseren of je eigen leiderschap te ontwikkelen.",
+        analysis: "Bij het analyseren van een leider kun je deze vijf componenten gebruiken:",
         steps: [
-          "Evalueer elke component afzonderlijk",
-          "Geef concrete voorbeelden bij elke component",
-          "Identificeer sterke punten en verbeterpunten",
-          "Maak een ontwikkelplan voor zwakke gebieden",
-          "Monitor voortgang en pas aan waar nodig"
+          "Heeft de leider de juiste kwaliteiten voor zijn/haar rol?",
+          "Toont hij/zij inlevingsvermogen met verschillende teamleden?",
+          "Stelt hij/zij het groepsbelang boven eigenbelang?",
+          "Heeft hij/zij goed gevoel voor timing?",
+          "Gedraagt hij/zij zich integer en betrouwbaar?"
         ]
       },
       keyInsights: [
-        "Gezag moet verdiend worden door competentie en gedrag",
-        "Verschillende mensen hebben verschillende leiderschapsbehoeften",
-        "Timing is cruciaal - forceer leiderschap niet",
-        "Integriteit is de basis van duurzaam leiderschap",
-        "Continue ontwikkeling is essentieel voor behoud van gezag"
+        "Gezag moet je verdienen door competentie en karakter",
+        "Verschillende mensen vragen verschillende leiderschapsbenaderingen",
+        "Timing is cruciaal - je moet je moment kennen",
+        "Integriteit en voorbeeldgedrag zijn niet onderhandelbaar",
+        "Gezagsontwikkeling is een continu proces"
       ],
-      sportApplication: "Deze theorie is perfect toepasbaar in sport waar leiderschap vaak natuurlijk ontstaat. Denk aan aanvoerders, coaches, en andere leiderschapsfiguren die gezag moeten ontwikkelen en behouden in competitieve omgevingen."
+      sportApplication: "In sport zie je duidelijk het verschil tussen leiders die gezag hebben (zoals Van Dijk) en die alleen op positie vertrouwen. De beste sportleiders combineren alle vijf componenten en blijven zich ontwikkelen."
     }
   }
 ]
