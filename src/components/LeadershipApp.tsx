@@ -495,6 +495,123 @@ const theories: Theory[] = [
     }
   },
   {
+    id: 'narcissistic-characteristics',
+    title: "Kenmerken van Narcistisch Leiderschap",
+    description: "Herkenbare karaktertrekken van narcistische leiders die hun effectiviteit ondermijnen en teams beschadigen.",
+    content: {
+      introduction: "Narcistische leiders vertonen specifieke gedragspatronen die hun teams en organisaties schaden. Deze kenmerken helpen bij het herkennen van problematisch leiderschap.",
+      characteristics: [
+        {
+          name: "Slechte Verliezers en Slechte Winnaars",
+          description: "Kunnen niet goed omgaan met nederlagen en zijn nooit tevreden met overwinningen",
+          traits: [
+            "Bij verlies ligt het altijd aan anderen",
+            "Bij winst is het nooit goed genoeg",
+            "Alles kan altijd beter volgens hen",
+            "Nemen geen verantwoordelijkheid voor mislukkingen"
+          ],
+          sportExample: "Een coach die na een nederlaag altijd de schuld geeft aan de scheidsrechter, het veld, of de spelers, maar nooit aan zijn eigen tactiek."
+        },
+        {
+          name: "Voortdurend Ondergewaardeerd",
+          description: "Voelen zich constant niet gewaardeerd en zoeken voortdurend naar erkenning",
+          traits: [
+            "Constant op zoek naar waardering",
+            "Voelen zich altijd tekort gedaan",
+            "Hebben behoefte aan constante bevestiging",
+            "Interpreteren neutrale reacties als kritiek"
+          ],
+          sportExample: "Een trainer die na elke wedstrijd benadrukt hoe goed zijn tactiek was en hoe weinig waardering hij krijgt van de media."
+        },
+        {
+          name: "Superioriteitscomplex",
+          description: "Geloven dat zij superieur zijn aan iedereen om hen heen",
+          traits: [
+            "Iedereen is dom behalve zij",
+            "Hun kijk op dingen is altijd beter",
+            "Anderen zien het allemaal verkeerd",
+            "Hebben geen respect voor andermans expertise"
+          ],
+          sportExample: "Een sportdirecteur die denkt dat hij alles beter weet dan scouts, trainers en analisten, en hun adviezen negeert."
+        },
+        {
+          name: "Dominantie en Controle",
+          description: "Vinden het heerlijk om anderen te vertellen wat ze moeten doen",
+          traits: [
+            "Willen altijd de baas zijn",
+            "Geven constant instructies aan anderen",
+            "Kunnen niet delegeren zonder te controleren",
+            "Micromanagement is hun tweede natuur"
+          ],
+          sportExample: "Een hoofdcoach die zelfs ervaren spelers constant vertelt hoe ze moeten lopen, staan en ademhalen."
+        },
+        {
+          name: "Entertainment en Show",
+          description: "Zien zichzelf als entertainers en maken van alles een show",
+          traits: [
+            "Hoog entertainment gehalte in speeches",
+            "Alles wordt een theatrale voorstelling",
+            "Zoeken constant de spotlight",
+            "Vorm is belangrijker dan inhoud"
+          ],
+          sportExample: "Een trainer die persconferenties gebruikt als podium voor zichzelf in plaats van om het team te bespreken.",
+          realWorldExamples: "Hitler's speeches waren ook shows met hoog entertainment gehalte."
+        },
+        {
+          name: "Emotieloosheid",
+          description: "Hebben geen echte emoties en willen ze ook niet voelen",
+          traits: [
+            "Stoppen emoties weg",
+            "Willen emotieloos overkomen",
+            "Hebben geen empathie",
+            "Kunnen niet echt verbinding maken"
+          ],
+          sportExample: "Een coach die nooit echte emotie toont bij overwinningen of nederlagen, maar altijd hetzelfde koele masker ophoudt."
+        },
+        {
+          name: "Niet Luisteren",
+          description: "Luisteren niet naar anderen en willen alleen zelf aan het woord zijn",
+          traits: [
+            "Onderbreken anderen constant",
+            "Horen alleen wat ze willen horen",
+            "Negeren feedback en adviezen",
+            "Monologen in plaats van dialogen"
+          ],
+          sportExample: "Een trainer die tijdens teamvergaderingen alleen zelf praat en spelers nooit de kans geeft om input te geven."
+        },
+        {
+          name: "Relationele Problemen",
+          description: "Hebben problematische relaties en zijn vaak bedriegers",
+          traits: [
+            "Ontzettend romantisch in het begin",
+            "Bedriegers in relaties",
+            "Hebben allemaal scheidingen achter de rug",
+            "Zoeken vaak veel jongere partners voor hun ego"
+          ],
+          sportExample: "Leiders die hun privéleven niet op orde hebben en dit ook doorwerkt in hun professionele relaties.",
+          realWorldExamples: "Berlusconi heeft veel van deze relationele kenmerken getoond. Veel machtige leiders hebben veel jongere partners die hun ego strelen."
+        }
+      ],
+      analysisQuestions: [
+        "Hoeveel van deze kenmerken heeft jouw leider?",
+        "In hoeverre is hij/zij narcistisch?",
+        "Is dit een ontspoorde leider?",
+        "Is dit een goede en authentieke leider?"
+      ],
+      mandela: {
+        title: "Het Mandela Paradox",
+        description: "Nelson Mandela had vrijwel geen van deze narcistische kenmerken, maar hoe kan dat?",
+        analysisPoints: [
+          "In het begin was Mandela leider van 'Spear of the Nation' en gebruikte geweld en sabotage - had hij toen narcistische trekken?",
+          "Hoe kreeg hij het voor elkaar dat zijn vrouw Winnie Mandela veel kenmerken van ontspoord leiderschap had?",
+          "Waarom hebben al zijn opvolgers (vooral Zuma) kenmerken van narcisme en ontspoord leiderschap?",
+          "In hoeverre is Mandela verantwoordelijk voor de latere problemen?",
+          "Hoe kan iemand zonder narcistische kenmerken toch narcistische opvolgers krijgen?"
+        ]
+      }
+    }
+  },
+  {
     id: 'maccoby',
     title: "Maccoby's Productief Narcisme",
     description: "Michael Maccoby ontdekte dat effectieve leiders vier narcistische elementen nodig hebben - maar alleen als ze niet doorslaan naar destructief narcisme.",
