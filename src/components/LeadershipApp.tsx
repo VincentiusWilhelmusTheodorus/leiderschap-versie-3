@@ -576,32 +576,6 @@ const theories: Theory[] = [
           ]
         }
       ],
-      productiveVsDestructive: {
-        title: "Productief vs Destructief Narcisme",
-        productive: {
-          description: "Wanneer deze vier elementen ten goede komen aan het team en de organisatie",
-          characteristics: [
-            "Visie wordt gedeeld en anderen worden erbij betrokken",
-            "Charisma wordt gebruikt om het team te inspireren",
-            "Zelfvertrouwen geeft anderen ook vertrouwen",
-            "Risico's worden genomen voor het algemeen belang"
-          ]
-        },
-        destructive: {
-          description: "Wanneer deze elementen alleen het ego van de leider dienen",
-          characteristics: [
-            "Visie wordt opgedrongen zonder input van anderen",
-            "Charisma wordt gebruikt voor persoonlijk gewin",
-            "Zelfvertrouwen wordt arrogantie die anderen kleinhoudt",
-            "Risico's worden genomen zonder rekening te houden met gevolgen voor anderen"
-          ]
-        }
-      },
-      keyMessage: {
-        title: "De Balans is Cruciaal",
-        description: "Deze vier narcistische elementen zijn essentieel voor effectief leiderschap, maar alleen als ze in balans blijven en ten goede komen aan het team.",
-        warning: "Zodra ze doorslaan naar puur eigenbelang, wordt productief narcisme destructief narcisme."
-      },
       sportApplication: "In sport zie je dit duidelijk: de beste coaches en aanvoerders hebben visie, charisma, zelfvertrouwen en durven risico's te nemen. Maar zodra het alleen nog om hun eigen ego gaat in plaats van het team, worden ze ineffectief."
     }
   },
