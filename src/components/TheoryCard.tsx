@@ -26,6 +26,126 @@ export default function TheoryCard({ theory, isExpanded, onRead, isRead }: Theor
     }
   }
 
+  const renderAuthorityDevelopmentContent = (content: any) => {
+    return (
+      <div className="space-y-6">
+        {/* Introduction */}
+        {content.introduction && (
+          <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+            <h4 className="font-semibold text-blue-800 mb-2">{content.introduction.title}</h4>
+            <p className="text-blue-700 mb-2">{content.introduction.description}</p>
+            <p className="text-blue-600 italic text-sm">{content.introduction.keyInsight}</p>
+          </div>
+        )}
+
+        {/* Five Components */}
+        {content.fiveComponents && (
+          <div className="space-y-6">
+            <h4 className="font-semibold text-gray-800 text-lg">🔑 Vijf Componenten voor Gezagsontwikkeling</h4>
+            {content.fiveComponents.map((component: any, index: number) => (
+              <div key={index} className="bg-white border rounded-lg p-6">
+                <h5 className="font-semibold text-purple-700 mb-3 text-lg">{component.name}</h5>
+                <p className="text-gray-700 mb-3">{component.description}</p>
+                
+                {component.keyPrinciple && (
+                  <div className="bg-purple-50 p-3 rounded border-l-4 border-purple-400 mb-4">
+                    <p className="text-purple-800 font-medium text-sm">
+                      🎯 <strong>Kernprincipe:</strong> {component.keyPrinciple}
+                    </p>
+                  </div>
+                )}
+
+                {component.characteristics && (
+                  <div className="mb-4">
+                    <h6 className="font-medium text-gray-800 mb-2">Kenmerken:</h6>
+                    <ul className="text-gray-600 text-sm space-y-1">
+                      {component.characteristics.map((char: string, charIndex: number) => (
+                        <li key={charIndex}>• {char}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {component.sportExample && (
+                  <div className="bg-green-50 p-4 rounded border-l-4 border-green-400 mb-4">
+                    <h6 className="font-medium text-green-800 mb-2">🏆 Sportvoorbeeld: {component.sportExample.example}</h6>
+                    <p className="text-green-700 text-sm mb-2">{component.sportExample.explanation}</p>
+                    <p className="text-green-600 text-sm italic">
+                      <strong>Les:</strong> {component.sportExample.lesson}
+                    </p>
+                  </div>
+                )}
+
+                {component.quote && (
+                  <div className="bg-yellow-50 p-3 rounded border-l-4 border-yellow-400 mb-4">
+                    <p className="text-yellow-700 text-sm italic">"{component.quote}"</p>
+                  </div>
+                )}
+
+                {component.practicalTips && (
+                  <div className="bg-gray-50 p-3 rounded">
+                    <h6 className="font-medium text-gray-800 mb-2">💡 Praktische Tips:</h6>
+                    <ul className="text-gray-600 text-sm space-y-1">
+                      {component.practicalTips.map((tip: string, tipIndex: number) => (
+                        <li key={tipIndex}>• {tip}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Continuous Development */}
+        {content.continuousDevelopment && (
+          <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-400">
+            <h4 className="font-semibold text-orange-800 mb-2">🔄 {content.continuousDevelopment.title}</h4>
+            <p className="text-orange-700 mb-3">{content.continuousDevelopment.description}</p>
+            <ul className="text-orange-600 text-sm space-y-1">
+              {content.continuousDevelopment.components.map((comp: string, index: number) => (
+                <li key={index}>• {comp}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Practical Application */}
+        {content.practicalApplication && (
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <h4 className="font-semibold text-gray-800 mb-2">🎯 {content.practicalApplication.title}</h4>
+            <p className="text-gray-700 mb-3">{content.practicalApplication.analysis}</p>
+            <ol className="text-gray-600 text-sm space-y-1">
+              {content.practicalApplication.steps.map((step: string, index: number) => (
+                <li key={index}>{index + 1}. {step}</li>
+              ))}
+            </ol>
+          </div>
+        )}
+
+        {/* Key Insights */}
+        {content.keyInsights && (
+          <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+            <h4 className="font-semibold text-yellow-800 mb-2">💡 Belangrijkste Inzichten</h4>
+            <ul className="text-yellow-700 space-y-1">
+              {content.keyInsights.map((insight: string, index: number) => (
+                <li key={index}>• {insight}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Sport Application */}
+        {content.sportApplication && (
+          <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+            <h4 className="font-semibold text-green-800 mb-2">🏆 Toepassing in Sport</h4>
+            <p className="text-green-700">{content.sportApplication}</p>
+          </div>
+        )}
+      </div>
+    )
+  }
+
   const renderVanVugtContent = (content: any) => {
     return (
       <div className="space-y-6">
@@ -235,6 +355,11 @@ export default function TheoryCard({ theory, isExpanded, onRead, isRead }: Theor
 
   const renderContent = () => {
     const content = theory.content
+
+    // Special handling for Authority Development theory
+    if (theory.id === 'authority-development') {
+      return renderAuthorityDevelopmentContent(content)
+    }
 
     // Special handling for Van Vugt & Wiltschut theory
     if (theory.id === 'van-vugt-wiltschut') {
